@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Factor Debye-Waller | The Myth of Sisyphus</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Factor Debye-Waller" />
+<meta name="author" content="J. Diomedes" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Antes de realizar el experimento de Laue ¿?REFERENCIA AL EXPERIMENTO, se hizo la objeción de que las posiciones instantáneas de los átomos de un cristal a temperatura ambiente están lejos de constituir una distribución periódica regular, debido a las grandes fluctuaciones térmicas [1, p. 719]. La posición de un átomo situado en $\mathbf{r}_{j}$ tiene un término que fluctúa con el tiempo." />
+<meta property="og:description" content="Antes de realizar el experimento de Laue ¿?REFERENCIA AL EXPERIMENTO, se hizo la objeción de que las posiciones instantáneas de los átomos de un cristal a temperatura ambiente están lejos de constituir una distribución periódica regular, debido a las grandes fluctuaciones térmicas [1, p. 719]. La posición de un átomo situado en $\mathbf{r}_{j}$ tiene un término que fluctúa con el tiempo." />
+<meta property="og:site_name" content="The Myth of Sisyphus" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-08-07T00:00:00+02:00" />
+<script type="application/ld+json">
+{"headline":"Factor Debye-Waller","dateModified":"2020-08-07T00:00:00+02:00","datePublished":"2020-08-07T00:00:00+02:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"/estado_solido/2020/08/07/Factor-Debye-Waller.html"},"url":"/estado_solido/2020/08/07/Factor-Debye-Waller.html","author":{"@type":"Person","name":"J. Diomedes"},"description":"Antes de realizar el experimento de Laue ¿?REFERENCIA AL EXPERIMENTO, se hizo la objeción de que las posiciones instantáneas de los átomos de un cristal a temperatura ambiente están lejos de constituir una distribución periódica regular, debido a las grandes fluctuaciones térmicas [1, p. 719]. La posición de un átomo situado en $\\mathbf{r}_{j}$ tiene un término que fluctúa con el tiempo.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="The Myth of Sisyphus" />
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+      equationNumbers: { autoNumber: "AMS" },
+      tagSide: "right"
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+      processEscapes: true
+    }
+  });
+  MathJax.Hub.Register.StartupHook("TeX AMSmath Ready", function () {
+    MathJax.InputJax.TeX.Stack.Item.AMSarray.Augment({
+      clearTag() {
+        if (!this.global.notags) {
+          this.super(arguments).clearTag.call(this);
+        }
+      }
+    });
+  });
+</script>
+<script type="text/javascript" charset="utf-8"
+  src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS_CHTML">
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">The Myth of Sisyphus</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Factor Debye-Waller</h1>
+    <p class="post-meta"><time class="dt-published" datetime="2020-08-07T00:00:00+02:00" itemprop="datePublished">
+        Aug 7, 2020
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>Antes de realizar el experimento de Laue <strong>¿?REFERENCIA AL EXPERIMENTO</strong>, se hizo la objeción de que 	las posiciones instantáneas de los átomos de un cristal a temperatura ambiente están lejos de constituir una distribución  periódica regular, debido a las grandes fluctuaciones térmicas <a href="#references">[1, p. 719]</a>. La posición de un átomo situado en $\mathbf{r}_{j}$ tiene un término que fluctúa con el tiempo.</p>
+
+\[\begin{equation*}\mathbf{r}(t)=\mathbf{r}_{j}+\mathbf{u}(t)\end{equation*}\]
+
+<p>las sumas dentro del factor de estructura serían del tipo</p>
+
+\[\begin{equation*}f_{j} \exp \left(-i \mathbf{G} \cdot \mathbf{r}_{j}\right)\langle\exp (-i \mathbf{G} \cdot \mathbf{u})\rangle\end{equation*}\]
+
+<p>de modo que deberíamos tomar el promedio térmico</p>
+
+\[\begin{equation}
+\langle\exp (-i \mathbf{G} \cdot \mathbf{u})\rangle=1-i\langle\mathbf{G} \cdot \mathbf{u}\rangle-\frac{1}{2}\left\langle(\mathbf{G} \cdot \mathbf{u})^{2}\right\rangle+\cdots
+\label{eq:DebyeWaller1}
+\end{equation}\]
+
+<p>$\mathbf{G}$ y $\mathbf{u}$ no están correlacionadas, debido a ello $\langle\mathbf{G} \cdot \mathbf{u}\rangle=0$, del mismo modo se tiene que</p>
+
+\[\begin{equation*}\left\langle(\mathbf{G} \cdot \mathbf{u})^{2}\right\rangle=\mathbf{G}^{2}\left\langle\boldsymbol{u}^{2}\right\rangle\left\langle\cos ^{2} \boldsymbol{\theta}\right\rangle=\frac{1}{3}\left\langle u^{2}\right\rangle \boldsymbol{G}^{2}\end{equation*}\]
+
+<p>donde el factor $1/3$ aparece al hacer el promedio de $\cos ^{2} \theta$ sobre una esfera <strong>¿?MOSTRAR EXPLICITAMENTE</strong>. Se puede demostrar que la sería <strong>¿?MOSTRAR EXPLICITAMENTE</strong></p>
+
+\[\begin{equation*}\exp \left(-\frac{1}{6}\left\langle u^{2}\right\rangle G^{2}\right)=1-\frac{1}{6}\left\langle u^{2}\right\rangle G^{2}+\cdots\end{equation*}\]
+
+<p>es equivalente a Eq.($\ref{eq:DebyeWaller1}$). De este modo la intensidad sería</p>
+
+\[\begin{equation}
+I=I_{0} \exp \left(-\frac{1}{3}\left\langle u^{2}\right\rangle G^{2}\right)
+\label{eq:DebyeWaller}
+\end{equation}\]
+
+<p>es precisamente el factor exponencial en Eq.($\ref{eq:DebyeWaller}$) el llamado factor Debye-Waller. Si desde el punto de vista clásico pensamos en estas fluctuaciones como las de un oscilador armónico tenemos que la energía potencial sería</p>
+
+\[\begin{equation*}\langle U\rangle=\frac{1}{2} C\left\langle u^{2}\right\rangle=\frac{1}{2} M \omega^{2}\left\langle u^{2}\right\rangle=\frac{3}{2} k_{B} T\end{equation*}\]
+
+<p>de modo que la intensidad dispersada sería</p>
+
+\[\begin{equation*}I(h k l)=I_{0} \exp \left(-k_{B} T G^{2} / M \omega^{2}\right)\end{equation*}\]
+
+<p>el oscilador clásico es una buena aproximación a altas temperaturas <strong>¿?REFERENCIAS EXPERIMENTALES. HACER EQUIVALENCIA CUÁNTICA A ALTAS TEMPERATURAS, POSIBLEMENTE PASANDO DE FERMI DIRAC A BOLTZMANN</strong>. A bajas temperaturas conviene usar el formalismo cuántico. La mitad de la energía del oscilador armónico sería potencial <strong>¿?eSTO ERA UN TEOREMA PARA FUERZAS CENTRALES</strong></p>
+
+\[\begin{equation*}\langle U\rangle=\frac{1}{2} M \omega^{2}\left\langle u^{2}\right\rangle=\frac{3}{4} \hbar \omega ; \quad\left\langle u^{2}\right\rangle=3 \hbar / 2 M \omega\end{equation*}\]
+
+<p>en consecuencia obtenemos <a href="#references">[1, p. 721]</a></p>
+
+\[\begin{equation*}I(h k l)=I_{0} \exp \left(-\hbar G^{2} / 2 M \omega\right)\end{equation*}\]
+
+<h2 id="references">References</h2>
+
+<ol>
+  <li>Kittel, Charles. Introducción a la física del estado sólido. Reverté, 2003</li>
+</ol>
+
+
+  </div><a class="u-url" href="/estado_solido/2020/08/07/Factor-Debye-Waller.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+        <ul class="contact-list">
+          <li class="p-name">J. Diomedes</li>
+          <li><a class="u-email" href="mailto:juandymorales432@gmail.com">juandymorales432@gmail.com</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <p>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/juandymc" title="juandymc"><svg class="svg-icon grey"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/jekyllrb" title="jekyllrb"><svg class="svg-icon grey"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

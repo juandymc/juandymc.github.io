@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Factor de estructura y de forma | The Myth of Sisyphus</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Factor de estructura y de forma" />
+<meta name="author" content="J. Diomedes" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
+<meta property="og:description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
+<meta property="og:site_name" content="The Myth of Sisyphus" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-08-07T00:00:00+02:00" />
+<script type="application/ld+json">
+{"headline":"Factor de estructura y de forma","dateModified":"2020-08-07T00:00:00+02:00","datePublished":"2020-08-07T00:00:00+02:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"/estado_solido/2020/08/07/Factor-de-Estructura-y-factor-de-forma.html"},"url":"/estado_solido/2020/08/07/Factor-de-Estructura-y-factor-de-forma.html","author":{"@type":"Person","name":"J. Diomedes"},"description":"Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="The Myth of Sisyphus" />
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+      equationNumbers: { autoNumber: "AMS" },
+      tagSide: "right"
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+      processEscapes: true
+    }
+  });
+  MathJax.Hub.Register.StartupHook("TeX AMSmath Ready", function () {
+    MathJax.InputJax.TeX.Stack.Item.AMSarray.Augment({
+      clearTag() {
+        if (!this.global.notags) {
+          this.super(arguments).clearTag.call(this);
+        }
+      }
+    });
+  });
+</script>
+<script type="text/javascript" charset="utf-8"
+  src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS_CHTML">
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">The Myth of Sisyphus</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Factor de estructura y de forma</h1>
+    <p class="post-meta"><time class="dt-published" datetime="2020-08-07T00:00:00+02:00" itemprop="datePublished">
+        Aug 7, 2020
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p><img src="../../assets/SimonFig14.1.png" alt="image-20200907133121003" style="zoom:80%;" /></p>
+
+<p>Partimos de la regla de oro de Fermi <a href="#references">[1, p. 141]</a></p>
+
+\[\begin{equation*}\Gamma\left(\mathbf{k}^{\prime}, \mathbf{k}\right)=\frac{2 \pi}{\hbar}\left|\left\langle\mathbf{k}^{\prime}|V| \mathbf{k}\right\rangle\right|^{2} \delta\left(E_{\mathbf{k}^{\prime}}-E_{\mathbf{k}}\right)\end{equation*}\]
+
+<p>de modo que el elemento de matriz sería</p>
+
+\[\begin{equation*}\left\langle\mathbf{k}^{\prime}|V| \mathbf{k}\right\rangle=\int \mathbf{d} \mathbf{r} \frac{e^{-i \mathbf{k}^{\prime} \cdot \mathbf{r}}}{\sqrt{L^{3}}} V(\mathbf{r}) \frac{e^{i \mathbf{k} \cdot \mathbf{r}}}{\sqrt{L^{3}}}=\frac{1}{L^{3}} \int \mathbf{d} \mathbf{r} e^{-i\left(\mathbf{k}^{\prime}-\mathbf{k}\right) \cdot \mathbf{r}} V(\mathbf{r})\end{equation*}\]
+
+<p>si nos restringimos dentro de la celda unitaria siendo $\mathbf{x}$ una posición de referencia dentro de ella</p>
+
+\[\begin{equation*}\begin{aligned}
+\left\langle\mathbf{k}^{\prime}|V| \mathbf{k}\right\rangle &amp;=\frac{1}{L^{3}} \int \mathbf{d} \mathbf{r} e^{-i\left(\mathbf{k}^{\prime}-\mathbf{k}\right) \cdot \mathbf{r}} V(\mathbf{r}) \\
+&amp;=\frac{1}{L^{3}} \sum_{\mathbf{R}} \int_{u n i t-c e l l} \mathbf{d} \mathbf{x} e^{-i\left(\mathbf{k}^{\prime}-\mathbf{k}\right) \cdot(\mathbf{x}+\mathbf{R})} V(\mathbf{x}+\mathbf{R})
+\end{aligned}\end{equation*}\]
+
+<p>dado que el potencial es periódico podemos escribir $V(\mathbf{x}+\mathbf{R})=V(\mathbf{x})$  <a href="#references">[1, p. 142]</a></p>
+
+\[\begin{equation}
+\left\langle\mathbf{k}^{\prime}|V| \mathbf{k}\right\rangle=\frac{1}{L^{3}}\left[\sum_{\mathbf{R}} e^{-i\left(\mathbf{k}^{\prime}-\mathbf{k}\right) \cdot \mathbf{R}}\right]\left[\int_{u n i t-c e l l} \mathbf{d} \mathbf{x} e^{-i\left(\mathbf{k}^{\prime}-\mathbf{k}\right) \cdot \mathbf{x}} V(\mathbf{x})\right]
+\label{eq:FermiLaue}
+\end{equation}\]
+
+<p>del estudio de las propiedades de la red recíproca <a href="#references">[1, p. 129]</a> sabemos que la integral no se desvanece solamente si se cumple</p>
+
+\[\begin{equation*}k^{\prime}-k=G\end{equation*}\]
+
+<p>el primer término entre paréntesis de Eq.($\ref{eq:FermiLaue}$) se desvanece a no ser que se cumpla la condición de Laue. El segundo término en Eq.($\ref{eq:FermiLaue}$) se denomina factor de estructura</p>
+
+\[\begin{equation*}S(\mathbf{G})=\int_{u n i t-c e l l} \mathbf{d} \mathbf{x} e^{i \mathbf{G} \cdot \mathbf{x}} V(\mathbf{x})\end{equation*}\]
+
+\[\begin{equation*}V(\mathbf{x})=\sum_{\text {atoms } j} V_{j}\left(\mathbf{x}-\mathbf{x}_{\mathbf{j}}\right)\end{equation*}\]
+
+\[\begin{equation*}V(\mathbf{x})=\sum_{\text {atoms } j} f_{j} \delta\left(\mathbf{x}-\mathbf{x}_{\mathbf{j}}\right)\end{equation*}\]
+
+\[\begin{equation*}V(\mathbf{x}) \sim \sum_{\text {atoms } j} b_{j} \delta\left(\mathbf{x}-\mathbf{x}_{\mathbf{j}}\right)\end{equation*}\]
+
+\[\begin{equation*}S(\mathbf{G}) \sim \sum_{\text {atom } j \text { in unit cell }} b_{j} e^{i \mathbf{G} \cdot \mathbf{x}_{j}}\end{equation*}\]
+
+<h2 id="references">References</h2>
+
+<ol>
+  <li>Simon S.H. The Oxford Solid State Basics (OUP, 2013)</li>
+</ol>
+
+  </div><a class="u-url" href="/estado_solido/2020/08/07/Factor-de-Estructura-y-factor-de-forma.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+        <ul class="contact-list">
+          <li class="p-name">J. Diomedes</li>
+          <li><a class="u-email" href="mailto:juandymorales432@gmail.com">juandymorales432@gmail.com</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <p>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/juandymc" title="juandymc"><svg class="svg-icon grey"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/jekyllrb" title="jekyllrb"><svg class="svg-icon grey"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

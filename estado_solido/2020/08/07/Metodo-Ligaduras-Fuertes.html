@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Método de las ligaduras fuertes | The Myth of Sisyphus</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Método de las ligaduras fuertes" />
+<meta name="author" content="J. Diomedes" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Para sistemas con electrones fuertemente ligados se usa el método tight binding. Este método consiste en aproximar el potencial cerca de un punto de red por un potencial atómico, y tratar la interacción con los átomos en puntos de red vecinos o como una perturbación [1, p. 136] de la interacción dominante entre las partículas (electrones y protones) en el átomo" />
+<meta property="og:description" content="Para sistemas con electrones fuertemente ligados se usa el método tight binding. Este método consiste en aproximar el potencial cerca de un punto de red por un potencial atómico, y tratar la interacción con los átomos en puntos de red vecinos o como una perturbación [1, p. 136] de la interacción dominante entre las partículas (electrones y protones) en el átomo" />
+<meta property="og:site_name" content="The Myth of Sisyphus" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-08-07T00:00:00+02:00" />
+<script type="application/ld+json">
+{"headline":"Método de las ligaduras fuertes","dateModified":"2020-08-07T00:00:00+02:00","datePublished":"2020-08-07T00:00:00+02:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"/estado_solido/2020/08/07/Metodo-Ligaduras-Fuertes.html"},"url":"/estado_solido/2020/08/07/Metodo-Ligaduras-Fuertes.html","author":{"@type":"Person","name":"J. Diomedes"},"description":"Para sistemas con electrones fuertemente ligados se usa el método tight binding. Este método consiste en aproximar el potencial cerca de un punto de red por un potencial atómico, y tratar la interacción con los átomos en puntos de red vecinos o como una perturbación [1, p. 136] de la interacción dominante entre las partículas (electrones y protones) en el átomo","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="The Myth of Sisyphus" />
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+      equationNumbers: { autoNumber: "AMS" },
+      tagSide: "right"
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+      processEscapes: true
+    }
+  });
+  MathJax.Hub.Register.StartupHook("TeX AMSmath Ready", function () {
+    MathJax.InputJax.TeX.Stack.Item.AMSarray.Augment({
+      clearTag() {
+        if (!this.global.notags) {
+          this.super(arguments).clearTag.call(this);
+        }
+      }
+    });
+  });
+</script>
+<script type="text/javascript" charset="utf-8"
+  src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS_CHTML">
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">The Myth of Sisyphus</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Método de las ligaduras fuertes</h1>
+    <p class="post-meta"><time class="dt-published" datetime="2020-08-07T00:00:00+02:00" itemprop="datePublished">
+        Aug 7, 2020
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>Para sistemas con electrones fuertemente ligados se usa el método <em>tight binding</em>. Este método consiste en aproximar el potencial cerca de un punto de red por un potencial atómico, y tratar la interacción con los átomos en puntos de red vecinos o como una perturbación <a href="#references">[1, p. 136]</a> de la interacción dominante entre las partículas (electrones y protones) en el átomo</p>
+
+\[\begin{equation}
+\begin{aligned}
+H \psi(\mathbf{r})&amp;=\left(H_{a t}+\Delta U(\mathbf{r})\right) \psi(\mathbf{r})\\
+&amp;=\varepsilon(\mathbf{k}) \psi(\mathbf{r})
+\end{aligned}
+\end{equation}\]
+
+<p>El comportamiento de los <em>core electrons</em> es similar tanto si tenemos un átomo libre como si tenemos un átomo formando un cristal <a href="#references">[2, pp. 167-168]</a>.</p>
+
+<p>Nosotros intentamos construir una solución que sea la superposición  de los orbitales atómicos de cada átomo del cristal <a href="#references">[1, p. 137]</a>, <a href="#references">[3, p. 179]</a></p>
+
+\[\begin{equation*}\psi_{n \mathbf{k}}(\mathbf{r})=\sum_{\mathbf{R}} C_{\mathbf{k}}(\mathbf{R}) \psi_{n}(\mathbf{r}-\mathbf{R})\end{equation*}\]
+
+<p>donde $\psi_{n}(\mathbf{r}-\mathbf{R})$ es la contribución de un orbital atómico situado en el punto $\mathbf{R}$ . Debemos tener en cuenta que los orbitales atómicos serían las soluciones a ecuaciones del tipo</p>
+
+\[\begin{equation}
+H_{a t} \psi_{n}=E_{n} \psi_{n}
+\label{eq:OrbitalAtómico}
+\end{equation}\]
+
+<p>donde no se tiene en cuenta las interacciones de tipo electrón-electrón <a href="#references">[5, p. 31]</a>.</p>
+
+<p>La suma en $\mathbf{R}$ se extiende a todo el cristal. Si queremos que $\psi_{n \mathbf{k}}(\mathbf{r})$ sea de la forma de Bloch se debe cumplir</p>
+
+\[\begin{equation*}\psi_{n \mathbf{k}}(\mathbf{r})=\sum_{\mathbf{R}} e^{\mathbf{k} \cdot \mathbf{R}} \psi_{n}(\mathbf{r}-\mathbf{R})\end{equation*}\]
+
+<p>esto es $C_{\mathbf{k}}(\mathbf{R})=e^{\mathbf{k} \cdot \mathbf{R}}$.</p>
+
+\[\begin{equation*}\psi(\mathbf{r})=\sum_{\mathbf{R}} e^{\boldsymbol{k} \cdot \mathbf{R}} \phi(\mathbf{r}-\mathbf{R})\end{equation*}\]
+
+<p>donde</p>
+
+\[\begin{equation*}\phi(\mathbf{r})=\sum_{n} b_{n} \psi_{n}(\mathbf{r})\end{equation*}\]
+
+<p>esto es, el orbital molecular $\phi(\mathbf{r})$ se puede escribir como una superposición de los orbitales atómicos $\psi_{n}(\mathbf{r})$.</p>
+
+<p>el lado izquierdo se convierte</p>
+
+\[\begin{equation}\int d \mathbf{r} \phi_{m}^{*}(\mathbf{r})H \psi(\mathbf{r})=\varepsilon(\mathbf{k}) \int d \mathbf{r} \phi_{m}^{*}(\mathbf{r}) \psi(\mathbf{r})\end{equation}\]
+
+<p>mientras que el lado derecho se convierte en</p>
+
+\[\begin{equation}
+\begin{aligned}
+\int d \mathbf{r} \phi_{m}^{*}(\mathbf{r})\left(H_{a t}+\Delta U(\mathbf{r})\right) \psi(\mathbf{r})&amp;=\int d \mathbf{r} \phi_{m}^{*}(\mathbf{r}) H_{a t} \psi(\mathbf{r})+\int d \mathbf{r} \phi_{m}^{*}(\mathbf{r}) \Delta U(\mathbf{r}) \psi(\mathbf{r})\\
+&amp;=\varepsilon_{m} \int d \mathbf{r} \phi_{m}^{*}(\mathbf{r}) \psi(\mathbf{r})+\int d \mathbf{r} \phi_{m}^{*}(\mathbf{r}) \Delta U(\mathbf{r}) \psi(\mathbf{r})\\
+\end{aligned}
+\end{equation}\]
+
+<p>igualando ambos lados se tiene que</p>
+
+\[\begin{equation}\begin{aligned}
+\varepsilon(\mathbf{k}) \int d \mathbf{r} \phi_{m}^{*}(\mathbf{r}) \psi(\mathbf{r})&amp;=\varepsilon_{m} \int d \mathbf{r} \phi_{m}^{*}(\mathbf{r}) \psi(\mathbf{r})+\int d \mathbf{r} \phi_{m}^{*}(\mathbf{r}) \Delta U(\mathbf{r}) \psi(\mathbf{r})
+\end{aligned}
+\end{equation}\]
+
+<p>o equivalentemente</p>
+
+\[\begin{equation}\begin{aligned}
+\left(\varepsilon(\mathbf{k})-\varepsilon_{m}\right) \int d \mathbf{r} \phi_{m}^{*}(\mathbf{r}) \psi(\mathbf{r})&amp;=\int d \mathbf{r} \phi_{m}^{*}(\mathbf{r}) \Delta U(\mathbf{r}) \psi(\mathbf{r})
+\end{aligned}
+\label{eq:CondicionTightBindingIntegral}
+\end{equation}\]
+
+<p>usemos el siguiente par de condiciones</p>
+
+\[\begin{equation}
+\begin{aligned}
+\psi(\mathbf{r})&amp;=\sum_{\mathbf{R}} e^{i \mathbf{k} \mathbf{R}} \phi(\mathbf{r}-\mathbf{R})\\
+\phi(\mathbf{r})&amp;=\sum_{n} b_{n} \phi_{n}(\mathbf{r})
+\end{aligned}
+\label{eq:CondicionTightBinding}
+\end{equation}\]
+
+<p>para desarrollar las integrales a cada lado. Así la integral a la izquierda de Eq.($\ref{eq:CondicionTightBinding}$) será</p>
+
+\[\begin{equation}
+\begin{aligned}
+\int d \mathbf{r} \phi_{m}^{*}(\mathbf{r}) \psi(\mathbf{r})&amp;=\sum_{\mathbf{R}} e^{i \mathbf{k} \mathbf{R}}\int d \mathbf{r} \phi_{m}^{*}(\mathbf{r}) \phi(\mathbf{r}-\mathbf{R})\\
+&amp;=\sum_{\mathbf{R}} e^{i \mathbf{k} \mathbf{R}}\sum_{n} b_{n}\int d \mathbf{r} \phi_{m}^{*}(\mathbf{r}) \phi_{n}(\mathbf{r}-\mathbf{R})\\
+&amp;=b_{m}+\sum_{\bar{R} \neq 0} e^{i \mathbf{k} R} \sum_{n} b_{n} \int d \mathbf{r} \phi_{m}^{*}(\mathbf{r}) \phi_{n}(\mathbf{r}-\mathbf{R})
+\end{aligned}
+\end{equation}\]
+
+<p>mientras que la integral a la derecha de Eq.($\ref{eq:CondicionTightBinding}$) será</p>
+
+\[\begin{equation}
+\begin{aligned}
+\int d \mathbf{r} \phi_{m}^{*}(\mathbf{r}) \Delta U(\mathbf{r}) \psi(\mathbf{r}) &amp;=\sum_{R} e^{i \mathbf{k} \mathbf{R}} \sum_{n} b_{n} \int d \mathbf{r} \phi_{m}^{*}(\mathbf{r}) \Delta U(\mathbf{r}) \phi_{n}(\mathbf{r}-\mathbf{R})\\
+&amp;=\sum_{n} b_{n} \int d \mathbf{r} \phi_{m}^{*}(\mathbf{r}) \Delta U(\mathbf{r}) \phi_{n}(\mathbf{r})+\\
+&amp;+\sum_{\mathbf{R} \neq 0} e^{i \mathbf{k} \mathbf{R}} \sum_{n} b_{n} \int d \mathbf{r} \phi_{m}^{*}(\mathbf{r}) \Delta U(\mathbf{r}) \phi_{n}(\mathbf{r}-\mathbf{R})
+\end{aligned}
+\end{equation}\]
+
+<p>de este modo, volviendo a la ecuación de partida Eq.($\ref{eq:CondicionTightBindingIntegral}$) se tiene que</p>
+
+\[\begin{equation}
+\begin{aligned}
+\left(\varepsilon(\mathbf{k})-\varepsilon_{m}\right) \left(b_{m}+\sum_{\bar{R} \neq 0} e^{i \mathbf{k} R} \sum_{n} b_{n} \int d \mathbf{r} \phi_{m}^{*}(\mathbf{r}) \phi_{n}(\mathbf{r}-\mathbf{R})\right)=\\
+=\sum_{n} b_{n} \int d \mathbf{r} \phi_{m}^{*}(\mathbf{r}) \Delta U(\mathbf{r}) \phi_{n}(\mathbf{r})+\sum_{\mathbf{R} \neq 0} e^{i \mathbf{k} \mathbf{R}} \sum_{n} b_{n} \int d \mathbf{r} \phi_{m}^{*}(\mathbf{r}) \Delta U(\mathbf{r}) \phi_{n}(\mathbf{r}-\mathbf{R})
+\end{aligned}
+\end{equation}\]
+
+<p>esto es</p>
+
+\[\begin{equation}
+\begin{aligned}
+\left(\varepsilon(\mathbf{k})-\varepsilon_{m}\right) b_{m}=-&amp;\left(\varepsilon(\mathbf{k})-\varepsilon_{m}\right)\sum_{\bar{R} \neq 0} e^{i \mathbf{k} R} \sum_{n} b_{n} \int d \mathbf{r} \phi_{m}^{*}(\mathbf{r}) \phi_{n}(\mathbf{r}-\mathbf{R})\\
++&amp;\sum_{n} b_{n} \int d \mathbf{r} \phi_{m}^{*}(\mathbf{r}) \Delta U(\mathbf{r}) \phi_{n}(\mathbf{r})\\
++&amp;\sum_{\mathbf{R} \neq 0} e^{i \mathbf{k} \mathbf{R}} \sum_{n} b_{n} \int d \mathbf{r} \phi_{m}^{*}(\mathbf{r}) \Delta U(\mathbf{r}) \phi_{n}(\mathbf{r}-\mathbf{R})
+\end{aligned}
+\end{equation}\]
+
+<p>si suponemos onda s, esto es $b_k=\delta_{ks}$ obtenemos</p>
+
+\[\begin{equation}\begin{aligned}
+\left(\varepsilon(\mathbf{k})-\varepsilon_{s}\right) b_{s}=-&amp;\left(\varepsilon(\mathbf{k})-\varepsilon_{s}\right) \sum_{\mathbf{R} \neq 0} e^{i \mathbf{k} R} b_s \int d \mathbf{r} \phi_{s}^{*}(\mathbf{r}) \phi_{s}(\mathbf{r}-\mathbf{R})\\
++&amp; b_{s} \int d \mathbf{r} \phi_{s}^{*}(\mathbf{r}) \Delta U(\mathbf{r}) \phi_{s}(\mathbf{r})\\
++&amp; \sum e^{i \mathbf{k} R} b_{s} \int d \mathbf{r} \phi_{s}^{*}(\mathbf{r}) \Delta U(\mathbf{r}) \phi_{s}(\mathbf{r}-\mathbf{R})
+\end{aligned}
+\end{equation}\]
+
+<p>si con objeto de simplificar los cálculos hacemos</p>
+
+\[\begin{equation}\begin{aligned}
+\alpha(\mathbf{R})&amp;=+\int d \mathbf{r} \phi^{*}_s(\mathbf{r}) \phi_s(\mathbf{r}-\mathbf{R}) \\
+\beta\quad &amp;=-\int d \mathbf{r}|\phi_s(\mathbf{r})|^{2} \Delta U(\mathbf{r}) \\
+\gamma(\mathbf{R})&amp;=-\int d \mathbf{r} \phi^{*}_s(\mathbf{r}) \Delta U(\mathbf{r}) \phi_s(\mathbf{r}-\mathbf{R})
+\end{aligned}\end{equation}\]
+
+<p>obtenemos</p>
+
+\[\begin{equation}\begin{aligned}
+\left(\varepsilon(\mathbf{k})-\varepsilon_{s}\right) b_{s}=-&amp;\left(\varepsilon(\mathbf{k})-\varepsilon_{s}\right) \sum_{\mathbf{R} \neq 0} e^{i \mathbf{k} \cdot\mathbf{R}} b_s \alpha(\mathbf{R})\\
+-&amp; b_{s} \beta\\
+-&amp; \sum e^{i \mathbf{k}\cdot\mathbf{R}} b_{s} \gamma(\mathbf{R})
+\end{aligned}
+\end{equation}\]
+
+<p>esto es,</p>
+
+\[\begin{equation}\left(\varepsilon(\mathbf{k})-\varepsilon_{s}\right)\left[1+\sum_{\bar{R} \neq 0} \alpha(\mathbf{R}) e^{i \mathbf{k} \mathbf{R}}\right]=-\beta-\sum_{\bar{R} \neq 0} \gamma(\mathbf{R}) e^{i \mathbf{k} \mathbf{R}}\end{equation}\]
+
+<p>de modo que la energía se puede escribir como</p>
+
+\[\begin{equation}\Rightarrow \varepsilon(\mathbf{k})=\varepsilon_{s}-\frac{\beta+\sum_{\mathbf{R}\neq 0} \gamma(\mathbf{R}) e^{i \mathbf{k}\cdot\mathbf{R}}}{1+\sum_{\mathbf{R} \neq 0} \alpha(\mathbf{R}) e^{i \mathbf{k} \cdot\mathbf{R}}}\end{equation}\]
+
+<p>si suponemos que $\alpha (\mathbf{R})\simeq 0$</p>
+
+\[\begin{equation}
+\Rightarrow \varepsilon(\mathbf{k})=\varepsilon_{s}-\beta-\sum_{\mathbf{R}\neq 0} \gamma(\mathbf{R}) e^{i \mathbf{k}\cdot\mathbf{R}}
+\end{equation}\]
+
+<h2 id="references">References</h2>
+
+<ol>
+  <li>Maza, Jesús, Jesús Mosqueira, and José Antonio Veira. Física del estado sólido: ejercicios resueltos. Vol. 11. Univ Santiago de Compostela, 2013</li>
+  <li>Ibach H., Lueth H. Solid-State Physics.. An Introduction to Principles of Materials Science 4ed., Springer, 2009</li>
+  <li>Patterson J.D., Bailey B.C. Solid-state physics.. Introduction to the theory (2ed., Springer, 2011)</li>
+  <li><a href="https://physics.stackexchange.com/q/320578/248507">LCAO - Constructing a molecular wavefunction</a></li>
+  <li>Mohn P. Magnetism in the solid state (2ed., Springer, 2006)</li>
+</ol>
+
+
+  </div><a class="u-url" href="/estado_solido/2020/08/07/Metodo-Ligaduras-Fuertes.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+        <ul class="contact-list">
+          <li class="p-name">J. Diomedes</li>
+          <li><a class="u-email" href="mailto:juandymorales432@gmail.com">juandymorales432@gmail.com</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <p>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/juandymc" title="juandymc"><svg class="svg-icon grey"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/jekyllrb" title="jekyllrb"><svg class="svg-icon grey"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

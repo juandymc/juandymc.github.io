@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Niveles de Landau | The Myth of Sisyphus</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Niveles de Landau" />
+<meta name="author" content="J. Diomedes" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Gas de electrones en dos dimensiones" />
+<meta property="og:description" content="Gas de electrones en dos dimensiones" />
+<meta property="og:site_name" content="The Myth of Sisyphus" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-08-07T00:00:00+02:00" />
+<script type="application/ld+json">
+{"headline":"Niveles de Landau","dateModified":"2020-08-07T00:00:00+02:00","datePublished":"2020-08-07T00:00:00+02:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"/estado_solido/2020/08/07/Niveles-de-Landau.html"},"url":"/estado_solido/2020/08/07/Niveles-de-Landau.html","author":{"@type":"Person","name":"J. Diomedes"},"description":"Gas de electrones en dos dimensiones","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="The Myth of Sisyphus" />
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+      equationNumbers: { autoNumber: "AMS" },
+      tagSide: "right"
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+      processEscapes: true
+    }
+  });
+  MathJax.Hub.Register.StartupHook("TeX AMSmath Ready", function () {
+    MathJax.InputJax.TeX.Stack.Item.AMSarray.Augment({
+      clearTag() {
+        if (!this.global.notags) {
+          this.super(arguments).clearTag.call(this);
+        }
+      }
+    });
+  });
+</script>
+<script type="text/javascript" charset="utf-8"
+  src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS_CHTML">
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">The Myth of Sisyphus</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Niveles de Landau</h1>
+    <p class="post-meta"><time class="dt-published" datetime="2020-08-07T00:00:00+02:00" itemprop="datePublished">
+        Aug 7, 2020
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <h2 id="gas-de-electrones-en-dos-dimensiones">Gas de electrones en dos dimensiones</h2>
+
+\[\begin{equation*}H=\frac{\pi^{2}}{2 m}=\frac{(\vec{p}-q \vec{A})^{2}}{2 m}\end{equation*}\]
+
+<p>dado que $\vec{B}=\vec{\nabla} \times \vec{A}$ si tomamos $\vec{A}=B_{o} x \hat{y}$ para que $\vec{B}=B_{o} \hat{z}$ podemos reescribir el hamiltoniano como</p>
+
+\[\begin{equation*}H=\frac{p^{2}}{2 m}-\frac{q B_{o} p_{y}}{m} x+\frac{q^{2} B_{o}^{2}}{2 m} x^{2}\end{equation*}\]
+
+<p>la componente $y$ conmuta con el hamiltoniano<a href="#references">[]</a> <strong>¿?REFERENCIA A ALGÚN LIBRO DE CUANTICA DONDE SE VEA EXPLICITAMENTE LO QUE SUCEDE AL CONMUTAR …</strong> por tanto</p>
+
+\[\begin{equation*}\left[H, p_{y}\right]=0 \Rightarrow \psi(x, y)=e^{i k_{y} y} u(x)\end{equation*}\]
+
+<p>de modo que operando <a href="#references">[1]</a></p>
+
+\[\begin{equation*}\begin{array}{r}
+H \psi_{p_{y}}=E\left(p_{y}\right) \psi_{p_{y}} \Rightarrow \\
+\left(\frac{p_{x}^{2}}{2 m}+\frac{p_{y}^{2}}{2 m}-\frac{q B_{o} p_{y}}{m} x+\frac{q^{2} B_{o}^{2}}{2 m} x^{2}\right) \phi_{p_{y}}=E\left(p_{y}\right) \phi_{p_{y}} \Rightarrow \\
+\left(\frac{p_{x}^{2}}{2 m}+\frac{\left(q B_{o}\right)^{2}}{2 m}\left(\frac{\hbar^{2} k_{y}^{2}}{\left(q B_{o}\right)^{2}}-2 \frac{\hbar k_{y}}{q B_{o}} x+x^{2}\right)\right) \phi_{p_{y}}=E\left(p_{y}\right) \phi_{p_{y}}
+\end{array}\end{equation*}\]
+
+<table>
+  <tbody>
+    <tr>
+      <td>de modo que definiendo $\ell_{B}^{2} \equiv \frac{\hbar}{q B}$, $\omega_{c} \equiv \frac{\left</td>
+      <td>q B_{o}\right</td>
+      <td>}{m}$  y completando cuadrado</td>
+    </tr>
+  </tbody>
+</table>
+
+\[\begin{equation*}\frac{1}{2 m}\left(p_{x}^{2}+m^{2} \omega_{c}^{2}\left(x-k_{y} \ell_{B}^{2}\right)^{2}\right) \phi_{p_{y}}=E\left(p_{y}\right) \phi_{p_{y}}\end{equation*}\]
+
+<p>de modo que tenemos un oscilador armónico unidimensional con niveles</p>
+
+\[\begin{equation*}E_{n}=\hbar \omega_{c}\left(n+\frac{1}{2}\right)\end{equation*}\]
+
+<p>y con autoestados</p>
+
+\[\begin{equation*}\psi_{n, p_{y}}=e^{i k_{y} y} H_{n}\left(x-k_{y} \ell_{B}^{2}\right) e^{-\frac{\left(x-k_{y} \ell_{B}^{2}\right)^{2}}{4 \ell_{B}^{2}}}\end{equation*}\]
+
+<p>donde los $H_n$ son polinomios de hermite. Los niveles de energía de este oscilador en particular son llamadas <em>Landau levels</em>. Hay muchos estados cuánticos para cada  <em>Landau level</em>, esto es, dado $n$, cada $p_y$ se corresponde a un autoestado con la misma energía.</p>
+
+<p>El efecto de aplicar campo magnético se puede ver a continuación</p>
+
+<p><img src="../../assets/RazeghiFig3.15.png" alt="image-20200907130436320" style="zoom: 67%;" /></p>
+
+<p>La densidad de estados, constante en el caso $B=0$ se convierte en discreta al aplicar $B&gt;0$.</p>
+
+<h2 id="degeneración-de-los-niveles-de-landau">Degeneración de los niveles de Landau</h2>
+
+<p>Tenemos condiciones de contorno periódicas luego $\Psi(x+L, y+L)=\Psi(x, y)$ <a href="#references">[2, p. 138]</a></p>
+
+\[\begin{equation*}k_{y}=\frac{2 \pi n_{y}}{L_y}, n_{y}=0,\pm 1,\pm 2,\end{equation*}\]
+
+<p>pero también se cumple que</p>
+
+\[\begin{equation*}k_{y}=\frac{|q| B_0 x_{0}}{\hbar}\end{equation*}\]
+
+<p>de modo que igualando</p>
+
+\[\begin{equation*}x_{0}=\frac{2 \pi \hbar n_y}{|q| B_0 L_{y}} \quad \text { si } \quad 0 \leq x_{0} \leq L_{x}\end{equation*}\]
+
+<p>o equivalentemente</p>
+
+\[\begin{equation*}0 \leq x_{0} \leq L_{x} \Rightarrow 0 \leq \frac{2 \pi \hbar m}{|q| B_0 L_{y}} \leq L_{x}\end{equation*}\]
+
+<p>de este modo el número de electrones que puede ocupar un nivel de Landau es</p>
+
+<p>\(\begin{equation*}0\leq n_y \leq \frac{|q| B_0 L_{x} L_{y}}{2 \pi \hbar}\end{equation*}\)
+de modo que el número máximo de electrones que puede ocupar un nivel de Landau sería</p>
+
+\[\begin{equation*}n_{y,\max }=\frac{|q| B_0 L_{x} L_{y}}{2 \pi \hbar}=N_{L}\end{equation*}\]
+
+<p>se suele usar la definición de longitud característica $l_B$ para simplificar</p>
+
+\[\begin{equation*}l_{B}=\sqrt{\frac{\hbar}{|q| B_0}} \Rightarrow N_{L}=\frac{L_{x} L_{y}}{2 \pi l_{B}^{2}}\end{equation*}\]
+
+<p>aunque también podemos interpretarlo desde el punto de vista de flujo magnético</p>
+
+\[\begin{equation*}N_{L}=\frac{|q| B_0 L_{x} L_{y}}{2 \pi \hbar}=\frac{B_0 S}{\frac{h}{|q|}}=\frac{\Phi}{\Phi_{0}}\end{equation*}\]
+
+<p>El número de estados cuánticos entre dos niveles de Landau consecutivos sería</p>
+
+\[\begin{equation*}\pi\left(k_{n+1}^{2}-k_{n}^{2}\right) \frac{L_{x} L_{y}}{(2 \pi)^{2}}=\pi \frac{2 m}{\hbar^{2}} \hbar \omega_{C} \frac{L_{x} L_{y}}{(2 \pi)^{2}}=\frac{|q| B_0 L_{x} L_{y}}{2 \pi \hbar}=N_{L}\end{equation*}\]
+
+<h2 id="gas-de-electrones-en-tres-dimensiones">Gas de electrones en tres dimensiones</h2>
+
+<p><a href="#references">[2, p. 137]</a></p>
+
+\[\begin{equation*}E_{n}\left(k_{z}\right)=\left(n+\frac{1}{2}\right) \hbar \omega_{C}+\frac{\hbar^{2} k_{z}^{2}}{2 m}\end{equation*}\]
+
+<p>**¿?FALTARÍA COMPETAR CON Onsager-Lifshitz **</p>
+
+<h2 id="references">References</h2>
+
+<ol>
+  <li><a href="http://publish.illinois.edu/yubo-paul-yang/files/2014/09/Landau-Levels.pdf">Yubo Yaul Yang. Landau Levels. 2014</a></li>
+  <li>Razeghi M. Fundamentals of Solid State Engineering (3ed., Springer, 2009)</li>
+</ol>
+
+  </div><a class="u-url" href="/estado_solido/2020/08/07/Niveles-de-Landau.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+        <ul class="contact-list">
+          <li class="p-name">J. Diomedes</li>
+          <li><a class="u-email" href="mailto:juandymorales432@gmail.com">juandymorales432@gmail.com</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <p>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/juandymc" title="juandymc"><svg class="svg-icon grey"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/jekyllrb" title="jekyllrb"><svg class="svg-icon grey"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

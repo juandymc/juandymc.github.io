@@ -1,0 +1,847 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2020-09-07T23:25:23+02:00</updated><id>/feed.xml</id><title type="html">The Myth of Sisyphus</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+</subtitle><author><name>J. Diomedes</name><email>juandymorales432@gmail.com</email></author><entry><title type="html">Conductividad térmica en aislantes</title><link href="/estado_solido/2020/08/07/Conductividad-t%C3%A9rmica-en-aislantes.html" rel="alternate" type="text/html" title="Conductividad térmica en aislantes" /><published>2020-08-07T00:00:00+02:00</published><updated>2020-08-07T00:00:00+02:00</updated><id>/estado_solido/2020/08/07/Conductividad%20t%C3%A9rmica%20en%20aislantes</id><content type="html" xml:base="/estado_solido/2020/08/07/Conductividad-t%C3%A9rmica-en-aislantes.html">&lt;p&gt;La fórmula para la conductividad  térmica puede ser derivada suponiendo que los portadores de corriente de calor in un aislante son los fonones y que estos fonones están sujetos a colisiones instantáneas unos con otros. Debemos tener en cuenta que estas colisiones pueden ocurrir únicamente si los términos anharmónicos están presentes en el potencial.&lt;/p&gt;
+
+&lt;p&gt;Consideremos una  una barra cuyos extremos se mantienen a diferente temperatura, esto es,&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../assets/AnimaluFig4.28.png&quot; alt=&quot;image-20200906121756354&quot; style=&quot;zoom: 33%;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;de modo que $n$ es el número de portadores y $c$ la capacidad calorífica por portador, $C_v=nc$ &lt;a href=&quot;#references&quot;&gt;[1, p. 138]&lt;/a&gt;.  El flujo de corriente de calor $J$ a lo largo de la dirección $x$ sería &lt;a href=&quot;#references&quot;&gt;[2, p. 500]&lt;/a&gt;&lt;/p&gt;
+
+\[\begin{equation*}j_{Q}=\left\langle v_{x} u\left(x_{0}-\Lambda \cos \theta\right)\right\rangle_{\theta}=\int_{0}^{\pi} v \cos \theta u\left(x_{0}-\Lambda \cos \theta\right) \frac{2 \pi \sin \theta d \theta}{4 \pi}=\end{equation*}\]
+
+\[\begin{equation*}=\frac{v}{2} \int_{-1}^{1} \mu d \mu u\left(x_{0}-\Lambda \mu\right)\end{equation*}\]
+
+&lt;p&gt;desarrollando la densidad de energía en serie de potencias hasta el término lineal&lt;/p&gt;
+
+\[\begin{equation*}j=-v \Lambda \frac{\partial u}{\partial x} \cdot \frac{1}{2} \int_{-1}^{1} \mu^{2} d \mu=\frac{1}{3} v \Lambda \frac{\partial u}{\partial T}\left(-\frac{\partial T}{\partial x}\right)\end{equation*}\]
+
+&lt;p&gt;de modo que&lt;/p&gt;
+
+\[\begin{equation*}j=K\left(-\frac{\partial T}{\partial x}\right)\end{equation*}\]
+
+&lt;p&gt;es la densidad de corriente térmica. El signo negativo nos indica que el flujo de calor tiende a ir hacia los lugares de menor temperatura &lt;a href=&quot;#references&quot;&gt;[3, p. 571]&lt;/a&gt;. La conductividad térmica es &lt;a href=&quot;#references&quot;&gt;[2, p. 500]&lt;/a&gt;&lt;/p&gt;
+
+\[\begin{equation*}
+K=\frac{1}{3} C_v v \Lambda
+\end{equation*}\]
+
+&lt;p&gt;donde $\Lambda$ es el recorrido libre medio y $v$ la &lt;em&gt;root-mean-square speed&lt;/em&gt; del gas de fonones. Al tratar la conductividad eléctrica de los metales se obtiene un resultado similar. Para los metales, los portadores son los electrones, de modo que $C$ es su capacidad calorífica, $\Lambda$ es el recorrido libre medio del electrón en el metal y $v$ la velocidad de Fermi. En el caso de aislantes, $C$ es la capacidad calorífica dada por la ley $T^3$ de Debye&lt;/p&gt;
+
+\[\begin{equation*}C=\left\{\begin{array}{ll}
+\alpha T^{3} &amp;amp; \left(T&amp;lt;\theta_{D}\right) \\
+3 N k_{B} &amp;amp; \left(T&amp;gt;\theta_{D}\right)
+\end{array}\right.\end{equation*}\]
+
+&lt;p&gt;A bajas temperaturas la conductividad térmica es proporcional a $T^3$. A altas temperaturas el recorrido libre medio de los fonones en inversamente proporcional a la temperatura $\Lambda\propto T^{-1}$ &lt;a href=&quot;#references&quot;&gt;[1, p. 140]&lt;/a&gt; &lt;strong&gt;¿?DE DONDE SE DEDUCE ESTO? SOLO SE SABE EXPERIMENTALMETE?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../assets/AnimaluFig4.29.png&quot; alt=&quot;image-20200906121512331&quot; style=&quot;zoom:50%;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Animalu, A. O. E. “Intermediate Quantum Theory of Crystalline Solids, Prentice-Hall, Inc.” (1977)&lt;/li&gt;
+  &lt;li&gt;Ashcroft, Neil W., and N. David Mermin. “Solid state physics [by] Neil W. Ashcroft [and] N. David Mermin.” (1976)&lt;/li&gt;
+  &lt;li&gt;Young H.D., Freedman R.A., Ford A.L. University Physics with Modern Physics (13ed., AW, 2011)&lt;/li&gt;
+&lt;/ol&gt;</content><author><name>J. Diomedes</name><email>juandymorales432@gmail.com</email></author><category term="Estado_Solido" /><summary type="html">La fórmula para la conductividad térmica puede ser derivada suponiendo que los portadores de corriente de calor in un aislante son los fonones y que estos fonones están sujetos a colisiones instantáneas unos con otros. Debemos tener en cuenta que estas colisiones pueden ocurrir únicamente si los términos anharmónicos están presentes en el potencial.</summary></entry><entry><title type="html">Conductividad térmica en aislantes</title><link href="/estado_solido/2020/08/07/Conductividad-t%C3%A9rmica-en-metales-I.html" rel="alternate" type="text/html" title="Conductividad térmica en aislantes" /><published>2020-08-07T00:00:00+02:00</published><updated>2020-08-07T00:00:00+02:00</updated><id>/estado_solido/2020/08/07/Conductividad%20t%C3%A9rmica%20en%20metales%20I</id><content type="html" xml:base="/estado_solido/2020/08/07/Conductividad-t%C3%A9rmica-en-metales-I.html">&lt;p&gt;Para calcular la densidad de corriente térmica en un metal partimos de la ley de Fourier&lt;/p&gt;
+
+&lt;p&gt;\(\begin{equation*}\mathbf{j}^{q}=-K \mathbf{\nabla} T\end{equation*}\)
+el signo negativo nos indica que los portadores de corriente se mueven a zonas de menor temperatura dentro del material de estudio.&lt;/p&gt;
+
+\[\begin{equation*}j^{q}=\frac{1}{2} n v[\varepsilon(T[x-v \tau])-\varepsilon(T[x+v \tau])]\end{equation*}\]
+
+\[\begin{equation*}j^{q}=n v^{2} \tau \frac{d \varepsilon}{d T}\left(-\frac{d T}{d x}\right)\end{equation*}\]
+
+&lt;p&gt;tienendo en cuenta&lt;/p&gt;
+
+\[\begin{equation*}\left\langle v_{x}^{2}\right\rangle=\left\langle v_{y}^{2}\right\rangle=\left\langle v_{z}^{2}\right\rangle=\frac{1}{3} v^{2}\end{equation*}\]
+
+&lt;p&gt;\(\begin{equation*}n d \varepsilon / d T=(N / V) d \varepsilon / d T=(d E / d T) / V=c_v\end{equation*}\)
+se obtiene&lt;/p&gt;
+
+\[\begin{equation*}\mathbf{j}^{q}=\frac{1}{3} v^{2} \tau c_{v}(-\nabla T)\end{equation*}\]
+
+&lt;p&gt;de modo que la conductividad térmica vale&lt;/p&gt;
+
+\[\begin{equation*}K=\frac{1}{3} v^{2} \tau c_{v}=\frac{1}{3} \ell v c_{\mathrm{r}}\end{equation*}\]
+
+&lt;p&gt;La densidad de energía para el gas de Fermi es&lt;/p&gt;
+
+\[\begin{equation*}u=u_{0}+\frac{\pi^{2}}{6}\left(k_{B} T\right)^{2} g\left(\delta_{F}\right)\end{equation*}\]
+
+&lt;p&gt;de modo que la capacidad calorífica es&lt;/p&gt;
+
+&lt;p&gt;\(\begin{equation*}c_{v}=\left(\frac{\partial u}{\partial T}\right)_{n}=\frac{\pi^{2}}{3} k_{B}^{2} T g\left(\varepsilon_{F}\right)\end{equation*}\)
+de este modo se tiene &lt;a href=&quot;#references&quot;&gt;[1, p. 47]&lt;/a&gt;
+\(\begin{equation*}c_{v}=\frac{\pi^{2}}{2}\left(\frac{k_{B} T}{\varepsilon_{F}}\right) n k_{B}\end{equation*}\)&lt;/p&gt;
+
+&lt;p&gt;si tenemos en cuenta que la velocidad de los electrones en el metal será la velocidad de fermi &lt;strong&gt;¿?ESTO HAY QUE EXPLICARLO BIEN&lt;/strong&gt;&lt;/p&gt;
+
+\[\begin{equation*}v_{F}^{2}=2 \varepsilon_{F} / m\end{equation*}\]
+
+&lt;p&gt;tenemos que la conductividad térmica en el metal es&lt;/p&gt;
+
+\[\begin{equation*}
+K=\frac{1}{3}\cdot\frac{2\varepsilon_F}{m}\cdot\tau\cdot\frac{\pi^{2}}{2}\left(\frac{k_{B} T}{\varepsilon_{F}}\right) n k_{B}=\frac{\pi^{2}nk_{B}^2\tau}{3m}T
+\end{equation*}\]
+
+&lt;p&gt;teniendo en cuenta que la conductividad eléctrica del metal es  &lt;a href=&quot;#references&quot;&gt;[1, p. 7]&lt;/a&gt; &lt;strong&gt;¿?AQUÍ DONDE SE TIENE EN CUENTA LA VELOCIDAD DE FERMI&lt;/strong&gt;&lt;/p&gt;
+
+\[\begin{equation*}\sigma=\frac{n e^{2} \tau}{m}\end{equation*}\]
+
+&lt;p&gt;obtenemos &lt;a href=&quot;#references&quot;&gt;[1, p. 52]&lt;/a&gt;&lt;/p&gt;
+
+\[\begin{equation*}\frac{\kappa}{\sigma T}=\frac{\pi^{2}}{3}\left(\frac{k_{B}}{e}\right)^{2}=2.44 \times 10^{-8} \mathrm{watt}-\mathrm{ohm} / \mathrm{K}\end{equation*}\]
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Ashcroft, Neil W., and N. David Mermin. “Solid state physics [by] Neil W. Ashcroft [and] N. David Mermin.” (1976)&lt;/li&gt;
+  &lt;li&gt;Young H.D., Freedman R.A., Ford A.L. University Physics with Modern Physics (13ed., AW, 2011)&lt;/li&gt;
+&lt;/ol&gt;</content><author><name>J. Diomedes</name><email>juandymorales432@gmail.com</email></author><category term="Estado_Solido" /><summary type="html">Para calcular la densidad de corriente térmica en un metal partimos de la ley de Fourier</summary></entry><entry><title type="html">Conductividad térmica en aislantes</title><link href="/estado_solido/2020/08/07/Conductividad-t%C3%A9rmica-en-metales-II.html" rel="alternate" type="text/html" title="Conductividad térmica en aislantes" /><published>2020-08-07T00:00:00+02:00</published><updated>2020-08-07T00:00:00+02:00</updated><id>/estado_solido/2020/08/07/Conductividad%20t%C3%A9rmica%20en%20metales%20II</id><content type="html" xml:base="/estado_solido/2020/08/07/Conductividad-t%C3%A9rmica-en-metales-II.html">\[\begin{equation*}\mathbf{j}^{q}=T \mathbf{j}^{s}\end{equation*}\]
+
+&lt;p&gt;la variación de entropía se puede relacionar con la variación de la energía interna y el número de partículas en la región. En términos de la densidad de corriente es&lt;/p&gt;
+
+\[\begin{equation*}T \mathbf{j}^{s}=\mathbf{j}^{\varepsilon}-\mu \mathbf{j}^{n}\end{equation*}\]
+
+\[\begin{equation*}\left\{\begin{array}{l}
+\mathrm{j}^{\varepsilon} \\
+\dot{\mathrm{j}}^{n}
+\end{array}\right\}=\sum_{n} \int \frac{d \mathrm{k}}{4 \pi^{3}}\left\{\begin{array}{c}
+\mathcal{E}_{n}(\mathbf{k}) \\
+1
+\end{array}\right\} \mathbf{v}_{n}(\mathbf{k}) g_{n}(\mathbf{k})\end{equation*}\]
+
+&lt;p&gt;nos propones calcular la conductividad térmica $K$.&lt;/p&gt;
+
+\[\begin{equation*}\mathbf{j}^{q}=\sum_{n} \int \frac{d \mathbf{k}}{4 \pi^{3}}\left[\varepsilon_{n}(\mathbf{k})-\mu\right] \mathbf{v}_{n}(\mathbf{k}) g_{n}(\mathbf{k})\end{equation*}\]
+
+&lt;p&gt;donde&lt;/p&gt;
+
+\[\begin{equation*}g(\mathbf{k})=g^{0}(\mathbf{k})-e \mathbf{E} \cdot \mathbf{v}(\mathbf{k}) \tau(\mathcal{E}(\mathbf{k}))\left(-\frac{\partial f}{\partial \varepsilon}\right)\end{equation*}\]
+
+\[\begin{equation*}\begin{array}{l}
+\mathbf{j}=\mathbf{L}^{11} \mathcal{E}+\mathbf{L}^{12}(-\nabla T) \\
+\mathbf{j}^{q}=\mathbf{L}^{21} \mathcal{E}+\mathbf{L}^{22}(-\mathbf{\nabla} T)
+\end{array}\end{equation*}\]
+
+&lt;p&gt;donde&lt;/p&gt;
+
+\[\begin{equation*}\mathcal{L}^{(x)}=e^{2} \int \frac{d \mathbf{k}}{4 \pi^{3}}\left(-\frac{\partial f}{\partial \varepsilon}\right) \tau(\mathcal{E}(\mathbf{k})) \mathbf{v}(\mathbf{k}) \mathbf{v}(\mathbf{k})(\mathcal{E}(\mathbf{k})-\mu)^{\alpha}\end{equation*}\]
+
+&lt;p&gt;de modo que&lt;/p&gt;
+
+\[\begin{equation*}\begin{array}{l}
+L^{11}=\mathcal{L}^{(0)} \\
+L^{21}=T L^{12}=-\frac{1}{e} \mathcal{L}^{(1)}, \\
+L^{22}=\frac{1}{e^{2} T} \mathcal{L}^{(2)}
+\end{array}\end{equation*}\]
+
+&lt;p&gt;podemos simplificar todos esto escribiendo&lt;/p&gt;
+
+\[\begin{equation*}\sigma(\varepsilon)=e^{2} \tau(\varepsilon) \int \frac{d \mathbf{k}}{4 \pi^{3}} \delta(\varepsilon-\varepsilon(\mathbf{k})) \mathbf{v}(\mathbf{k}) \mathbf{v}(\mathbf{k})\end{equation*}\]
+
+&lt;p&gt;de modo que reescribiendo las relaciones anteriores&lt;/p&gt;
+
+\[\begin{equation*}\mathcal{L}^{(\alpha)}=\int d \varepsilon\left(-\frac{\partial f}{\partial \varepsilon}\right)(\mathcal{E}-\mu)^{\alpha} \boldsymbol{\sigma}(\mathcal{E})\end{equation*}\]
+
+\[\begin{equation*}\begin{array}{l}
+\mathbf{L}^{11}=\sigma\left(\mathcal{E}_{F}\right)=\sigma \\
+\mathbf{L}^{21}=T L^{12}=-\frac{\pi^{2}}{3 e}\left(k_{B} T\right)^{2} \sigma^{\prime} \\
+L^{22}=\frac{\pi^{2}}{3} \frac{k_{B}^{2} T}{e^{2}} \sigma
+\end{array}\end{equation*}\]
+
+&lt;p&gt;en ausencia de corriente eléctrica&lt;/p&gt;
+
+\[\begin{equation*}\varepsilon=-\left(L^{11}\right)^{-1} L^{12}(-\nabla T)\end{equation*}\]
+
+&lt;p&gt;de modo que&lt;/p&gt;
+
+\[\begin{equation*}\mathbf{j}^{q}=\mathbf{K}(-\mathbf{\nabla} T)\end{equation*}\]
+
+\[\begin{equation*}\mathbf{K}=\mathbf{L}^{22}+O\left(k_{B} T / \varepsilon_{F}\right)^{2}\end{equation*}\]
+
+\[\begin{equation*}\mathbf{K}=\frac{\pi^{2}}{3}\left(\frac{k_{B}}{e}\right)^{2} T \mathbf{\sigma}\end{equation*}\]
+
+&lt;p&gt;\(\begin{equation*}\mathbf{j}^{q}=\frac{1}{3} v^{2} \tau c_{v}(-\nabla T)\end{equation*}\)
+el signo negativo nos indica que el flujo de calor se produce desde los lugares de alta a los de baja temperatura. La conductividad térmica sería en este caso
+\(\begin{equation*}K=\frac{1}{3} v^{2} \tau c_{v}=\frac{1}{3} \Lambda v c_{\mathrm{r}}\end{equation*}\)&lt;/p&gt;
+
+&lt;p&gt;donde $\Lambda$ es el rescorrido libre medio,&lt;/p&gt;
+
+&lt;p&gt;p.256&lt;/p&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Animalu, A. O. E. “Intermediate Quantum Theory of Crystalline Solids, Prentice-Hall, Inc.” (1977)&lt;/li&gt;
+  &lt;li&gt;Ashcroft, Neil W., and N. David Mermin. “Solid state physics [by] Neil W. Ashcroft [and] N. David Mermin.” (1976)&lt;/li&gt;
+  &lt;li&gt;Young H.D., Freedman R.A., Ford A.L. University Physics with Modern Physics (13ed., AW, 2011)&lt;/li&gt;
+&lt;/ol&gt;</content><author><name>J. Diomedes</name><email>juandymorales432@gmail.com</email></author><category term="Estado_Solido" /><summary type="html">\[\begin{equation*}\mathbf{j}^{q}=T \mathbf{j}^{s}\end{equation*}\]</summary></entry><entry><title type="html">Factor Debye-Waller</title><link href="/estado_solido/2020/08/07/Dilataci%C3%B3n-t%C3%A9rmica-modelo-de-Gr%C3%BCneisen.html" rel="alternate" type="text/html" title="Factor Debye-Waller" /><published>2020-08-07T00:00:00+02:00</published><updated>2020-08-07T00:00:00+02:00</updated><id>/estado_solido/2020/08/07/Dilataci%C3%B3n%20t%C3%A9rmica:%20modelo%20de%20Gr%C3%BCneisen</id><content type="html" xml:base="/estado_solido/2020/08/07/Dilataci%C3%B3n-t%C3%A9rmica-modelo-de-Gr%C3%BCneisen.html">\[\begin{equation*}Z=\sum_{n} \mathrm{e}^{-\hbar \omega(n+1 / 2) / k_B T}=\frac{\mathrm{e}^{-(\hbar \omega /  k_B T) / 2}}{1-\mathrm{e}^{-\hbar \omega / k_B T}}\end{equation*}\]
+
+\[\begin{equation*}
+F_{s,\mathbf{k}}=\frac{1}{2} \hbar \omega_s(\mathbf{k})+k_B T \ln \left(1-\mathrm{e}^{-\hbar \omega_s(\mathbf{k}) / k_B T}\right)\end{equation*}\]
+
+&lt;p&gt;de modo que el potencial total será&lt;/p&gt;
+
+\[\begin{equation}
+F=F_{\text{eq}}+\sum_{s,\mathbf{k}}\frac{1}{2} \hbar \omega_s(\mathbf{k})+\sum_{s,\mathbf{k}}k_B T \ln \left(1-\mathrm{e}^{-\hbar \omega_s(\mathbf{k}) /k_B T}\right)
+\label{eq:HelmholtzTotal}
+\end{equation}\]
+
+&lt;p&gt;donde $F_{\text{eq}}$ es el potencial de Helmholtz en el equilibrio. La presión en el cristal según la termodinámica es&lt;/p&gt;
+
+\[\begin{equation*}
+P=-\left(\frac{\partial F}{\partial V}\right)_{T}
+\end{equation*}\]
+
+&lt;p&gt;de este modo al sustituir Eq.($\ref{eq:HelmholtzTotal}$) obtenemos que la presión es&lt;/p&gt;
+
+\[\begin{equation*}
+P=-\frac{\partial}{\partial V}\left[F_{\mathrm{eq}}+\sum_{s\mathbf{k}}\frac{1}{2} \hbar \omega_{\mathrm{s}}(\mathrm{k})\right]+\sum_{s\mathbf{k}}\left(-\frac{\partial}{\partial V}\left(\hbar \omega_{s}(\mathbf{k})\right)\right) \frac{1}{e^{\beta \omega_{s}(\mathbf{k})}-1}
+\end{equation*}\]
+
+&lt;p&gt;si manipulamos la expresión del coeficiente de expansión térmica obtenemos &lt;a href=&quot;#references&quot;&gt;[2, p. 492]&lt;/a&gt;&lt;/p&gt;
+
+\[\begin{equation*}
+\alpha=\frac{1}{3 V}\left(\frac{\partial V}{\partial T}\right)_{P}=-\frac{1}{3 V} \frac{\left(\frac{\partial P}{\partial T}\right)_{V}}{\left(\frac{\partial P}{\partial V}\right)_{T}}=\frac{1}{3 B}\left(\frac{\partial P}{\partial T}\right)_{V}
+\end{equation*}\]
+
+&lt;p&gt;de modo que usando nuestro resultado obtenido para la presión podemos escribir &lt;a href=&quot;#references&quot;&gt;[2, p. 492]&lt;/a&gt;&lt;/p&gt;
+
+\[\begin{equation*}\alpha=\frac{1}{3 B} \sum_{s\mathbf{k}}\left(-\frac{\partial}{\partial V} \hbar \omega_{s}(\mathbf{k})\right) \frac{\partial}{\partial T} n_{s}(\mathbf{k})\end{equation*}\]
+
+&lt;p&gt;donde $n_{s}(\mathbf{k})=\left[e^{\beta \omega_{s}(\mathbf{k})}-1\right]^{-1}$. Podemos ver que dos son los mecanismos que influyen en el coeficiente de expansión térmica in termino de fonones:&lt;/p&gt;
+
+&lt;p&gt;La tasa de cambio de la ocupación de los niveles con la temperatura, que se estudia mediante la capacidad calorífica a volumen constante&lt;/p&gt;
+
+\[c_{V}=\sum_{s\mathbf{k}} \frac{\hbar \omega_{s}(\mathbf{k})}{V} \frac{\partial}{\partial T} n_{s}(\mathbf{k}, T)\]
+
+&lt;p&gt;y la tasa de cambio de la energía de los fonones con el volumen, que se estudia mediante el parámetro de Grüneisen &lt;a href=&quot;#references&quot;&gt;[1, p. 72]&lt;/a&gt;&lt;/p&gt;
+
+\[\begin{equation*}\gamma_{s \mathbf{k}}=-\frac{V}{\omega_{s}(\mathbf{k})} \frac{\partial \omega_{s}(\mathbf{k})}{\partial V}=-\frac{\partial\left(\ln \omega_{s}(\mathbf{k})\right)}{\partial \ln V}\end{equation*}\]
+
+&lt;p&gt;Si generalizamos el parámetro de Grüneisen para que tenga validez en todo el espectro&lt;/p&gt;
+
+\[\begin{equation*}\gamma(T)=\frac{1}{c_{V}} \sum_{s, \boldsymbol{q}} \gamma_{s \boldsymbol{q}} \frac{\hbar \omega_{s}(\boldsymbol{q})}{V} \frac{\partial}{\partial T} n_{s}(\boldsymbol{q}, T)\end{equation*}\]
+
+&lt;p&gt;podemos llegar a la relación de Grüneisen &lt;a href=&quot;#references&quot;&gt;[1, p. 72]&lt;/a&gt;&lt;/p&gt;
+
+\[\begin{equation*}3 B_{0}(T) \alpha(T)=\gamma(T) c_{V}(T)\end{equation*}\]
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Roessler U. Solid State Theory.. An Introduction (2ed., Springer, 2009)&lt;/li&gt;
+  &lt;li&gt;Ashcroft, Neil W., and N. David Mermin. “Solid state physics [by] Neil W. Ashcroft [and] N. David Mermin.” (1976)&lt;/li&gt;
+&lt;/ol&gt;</content><author><name>J. Diomedes</name><email>juandymorales432@gmail.com</email></author><category term="Estado_Solido" /><summary type="html">\[\begin{equation*}Z=\sum_{n} \mathrm{e}^{-\hbar \omega(n+1 / 2) / k_B T}=\frac{\mathrm{e}^{-(\hbar \omega / k_B T) / 2}}{1-\mathrm{e}^{-\hbar \omega / k_B T}}\end{equation*}\]</summary></entry><entry><title type="html">Factor Debye-Waller</title><link href="/estado_solido/2020/08/07/Factor-Debye-Waller.html" rel="alternate" type="text/html" title="Factor Debye-Waller" /><published>2020-08-07T00:00:00+02:00</published><updated>2020-08-07T00:00:00+02:00</updated><id>/estado_solido/2020/08/07/Factor%20Debye-Waller</id><content type="html" xml:base="/estado_solido/2020/08/07/Factor-Debye-Waller.html">&lt;p&gt;Antes de realizar el experimento de Laue &lt;strong&gt;¿?REFERENCIA AL EXPERIMENTO&lt;/strong&gt;, se hizo la objeción de que 	las posiciones instantáneas de los átomos de un cristal a temperatura ambiente están lejos de constituir una distribución  periódica regular, debido a las grandes fluctuaciones térmicas &lt;a href=&quot;#references&quot;&gt;[1, p. 719]&lt;/a&gt;. La posición de un átomo situado en $\mathbf{r}_{j}$ tiene un término que fluctúa con el tiempo.&lt;/p&gt;
+
+\[\begin{equation*}\mathbf{r}(t)=\mathbf{r}_{j}+\mathbf{u}(t)\end{equation*}\]
+
+&lt;p&gt;las sumas dentro del factor de estructura serían del tipo&lt;/p&gt;
+
+\[\begin{equation*}f_{j} \exp \left(-i \mathbf{G} \cdot \mathbf{r}_{j}\right)\langle\exp (-i \mathbf{G} \cdot \mathbf{u})\rangle\end{equation*}\]
+
+&lt;p&gt;de modo que deberíamos tomar el promedio térmico&lt;/p&gt;
+
+\[\begin{equation}
+\langle\exp (-i \mathbf{G} \cdot \mathbf{u})\rangle=1-i\langle\mathbf{G} \cdot \mathbf{u}\rangle-\frac{1}{2}\left\langle(\mathbf{G} \cdot \mathbf{u})^{2}\right\rangle+\cdots
+\label{eq:DebyeWaller1}
+\end{equation}\]
+
+&lt;p&gt;$\mathbf{G}$ y $\mathbf{u}$ no están correlacionadas, debido a ello $\langle\mathbf{G} \cdot \mathbf{u}\rangle=0$, del mismo modo se tiene que&lt;/p&gt;
+
+\[\begin{equation*}\left\langle(\mathbf{G} \cdot \mathbf{u})^{2}\right\rangle=\mathbf{G}^{2}\left\langle\boldsymbol{u}^{2}\right\rangle\left\langle\cos ^{2} \boldsymbol{\theta}\right\rangle=\frac{1}{3}\left\langle u^{2}\right\rangle \boldsymbol{G}^{2}\end{equation*}\]
+
+&lt;p&gt;donde el factor $1/3$ aparece al hacer el promedio de $\cos ^{2} \theta$ sobre una esfera &lt;strong&gt;¿?MOSTRAR EXPLICITAMENTE&lt;/strong&gt;. Se puede demostrar que la sería &lt;strong&gt;¿?MOSTRAR EXPLICITAMENTE&lt;/strong&gt;&lt;/p&gt;
+
+\[\begin{equation*}\exp \left(-\frac{1}{6}\left\langle u^{2}\right\rangle G^{2}\right)=1-\frac{1}{6}\left\langle u^{2}\right\rangle G^{2}+\cdots\end{equation*}\]
+
+&lt;p&gt;es equivalente a Eq.($\ref{eq:DebyeWaller1}$). De este modo la intensidad sería&lt;/p&gt;
+
+\[\begin{equation}
+I=I_{0} \exp \left(-\frac{1}{3}\left\langle u^{2}\right\rangle G^{2}\right)
+\label{eq:DebyeWaller}
+\end{equation}\]
+
+&lt;p&gt;es precisamente el factor exponencial en Eq.($\ref{eq:DebyeWaller}$) el llamado factor Debye-Waller. Si desde el punto de vista clásico pensamos en estas fluctuaciones como las de un oscilador armónico tenemos que la energía potencial sería&lt;/p&gt;
+
+\[\begin{equation*}\langle U\rangle=\frac{1}{2} C\left\langle u^{2}\right\rangle=\frac{1}{2} M \omega^{2}\left\langle u^{2}\right\rangle=\frac{3}{2} k_{B} T\end{equation*}\]
+
+&lt;p&gt;de modo que la intensidad dispersada sería&lt;/p&gt;
+
+\[\begin{equation*}I(h k l)=I_{0} \exp \left(-k_{B} T G^{2} / M \omega^{2}\right)\end{equation*}\]
+
+&lt;p&gt;el oscilador clásico es una buena aproximación a altas temperaturas &lt;strong&gt;¿?REFERENCIAS EXPERIMENTALES. HACER EQUIVALENCIA CUÁNTICA A ALTAS TEMPERATURAS, POSIBLEMENTE PASANDO DE FERMI DIRAC A BOLTZMANN&lt;/strong&gt;. A bajas temperaturas conviene usar el formalismo cuántico. La mitad de la energía del oscilador armónico sería potencial &lt;strong&gt;¿?eSTO ERA UN TEOREMA PARA FUERZAS CENTRALES&lt;/strong&gt;&lt;/p&gt;
+
+\[\begin{equation*}\langle U\rangle=\frac{1}{2} M \omega^{2}\left\langle u^{2}\right\rangle=\frac{3}{4} \hbar \omega ; \quad\left\langle u^{2}\right\rangle=3 \hbar / 2 M \omega\end{equation*}\]
+
+&lt;p&gt;en consecuencia obtenemos &lt;a href=&quot;#references&quot;&gt;[1, p. 721]&lt;/a&gt;&lt;/p&gt;
+
+\[\begin{equation*}I(h k l)=I_{0} \exp \left(-\hbar G^{2} / 2 M \omega\right)\end{equation*}\]
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Kittel, Charles. Introducción a la física del estado sólido. Reverté, 2003&lt;/li&gt;
+&lt;/ol&gt;</content><author><name>J. Diomedes</name><email>juandymorales432@gmail.com</email></author><category term="Estado_Solido" /><summary type="html">Antes de realizar el experimento de Laue ¿?REFERENCIA AL EXPERIMENTO, se hizo la objeción de que las posiciones instantáneas de los átomos de un cristal a temperatura ambiente están lejos de constituir una distribución periódica regular, debido a las grandes fluctuaciones térmicas [1, p. 719]. La posición de un átomo situado en $\mathbf{r}_{j}$ tiene un término que fluctúa con el tiempo.</summary></entry><entry><title type="html">Factor de estructura y de forma</title><link href="/estado_solido/2020/08/07/Factor-de-Estructura-y-factor-de-forma.html" rel="alternate" type="text/html" title="Factor de estructura y de forma" /><published>2020-08-07T00:00:00+02:00</published><updated>2020-08-07T00:00:00+02:00</updated><id>/estado_solido/2020/08/07/Factor%20de%20Estructura%20y%20factor%20de%20forma</id><content type="html" xml:base="/estado_solido/2020/08/07/Factor-de-Estructura-y-factor-de-forma.html">&lt;p&gt;&lt;img src=&quot;../../assets/SimonFig14.1.png&quot; alt=&quot;image-20200907133121003&quot; style=&quot;zoom:80%;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Partimos de la regla de oro de Fermi &lt;a href=&quot;#references&quot;&gt;[1, p. 141]&lt;/a&gt;&lt;/p&gt;
+
+\[\begin{equation*}\Gamma\left(\mathbf{k}^{\prime}, \mathbf{k}\right)=\frac{2 \pi}{\hbar}\left|\left\langle\mathbf{k}^{\prime}|V| \mathbf{k}\right\rangle\right|^{2} \delta\left(E_{\mathbf{k}^{\prime}}-E_{\mathbf{k}}\right)\end{equation*}\]
+
+&lt;p&gt;de modo que el elemento de matriz sería&lt;/p&gt;
+
+\[\begin{equation*}\left\langle\mathbf{k}^{\prime}|V| \mathbf{k}\right\rangle=\int \mathbf{d} \mathbf{r} \frac{e^{-i \mathbf{k}^{\prime} \cdot \mathbf{r}}}{\sqrt{L^{3}}} V(\mathbf{r}) \frac{e^{i \mathbf{k} \cdot \mathbf{r}}}{\sqrt{L^{3}}}=\frac{1}{L^{3}} \int \mathbf{d} \mathbf{r} e^{-i\left(\mathbf{k}^{\prime}-\mathbf{k}\right) \cdot \mathbf{r}} V(\mathbf{r})\end{equation*}\]
+
+&lt;p&gt;si nos restringimos dentro de la celda unitaria siendo $\mathbf{x}$ una posición de referencia dentro de ella&lt;/p&gt;
+
+\[\begin{equation*}\begin{aligned}
+\left\langle\mathbf{k}^{\prime}|V| \mathbf{k}\right\rangle &amp;amp;=\frac{1}{L^{3}} \int \mathbf{d} \mathbf{r} e^{-i\left(\mathbf{k}^{\prime}-\mathbf{k}\right) \cdot \mathbf{r}} V(\mathbf{r}) \\
+&amp;amp;=\frac{1}{L^{3}} \sum_{\mathbf{R}} \int_{u n i t-c e l l} \mathbf{d} \mathbf{x} e^{-i\left(\mathbf{k}^{\prime}-\mathbf{k}\right) \cdot(\mathbf{x}+\mathbf{R})} V(\mathbf{x}+\mathbf{R})
+\end{aligned}\end{equation*}\]
+
+&lt;p&gt;dado que el potencial es periódico podemos escribir $V(\mathbf{x}+\mathbf{R})=V(\mathbf{x})$  &lt;a href=&quot;#references&quot;&gt;[1, p. 142]&lt;/a&gt;&lt;/p&gt;
+
+\[\begin{equation}
+\left\langle\mathbf{k}^{\prime}|V| \mathbf{k}\right\rangle=\frac{1}{L^{3}}\left[\sum_{\mathbf{R}} e^{-i\left(\mathbf{k}^{\prime}-\mathbf{k}\right) \cdot \mathbf{R}}\right]\left[\int_{u n i t-c e l l} \mathbf{d} \mathbf{x} e^{-i\left(\mathbf{k}^{\prime}-\mathbf{k}\right) \cdot \mathbf{x}} V(\mathbf{x})\right]
+\label{eq:FermiLaue}
+\end{equation}\]
+
+&lt;p&gt;del estudio de las propiedades de la red recíproca &lt;a href=&quot;#references&quot;&gt;[1, p. 129]&lt;/a&gt; sabemos que la integral no se desvanece solamente si se cumple&lt;/p&gt;
+
+\[\begin{equation*}k^{\prime}-k=G\end{equation*}\]
+
+&lt;p&gt;el primer término entre paréntesis de Eq.($\ref{eq:FermiLaue}$) se desvanece a no ser que se cumpla la condición de Laue. El segundo término en Eq.($\ref{eq:FermiLaue}$) se denomina factor de estructura&lt;/p&gt;
+
+\[\begin{equation*}S(\mathbf{G})=\int_{u n i t-c e l l} \mathbf{d} \mathbf{x} e^{i \mathbf{G} \cdot \mathbf{x}} V(\mathbf{x})\end{equation*}\]
+
+\[\begin{equation*}V(\mathbf{x})=\sum_{\text {atoms } j} V_{j}\left(\mathbf{x}-\mathbf{x}_{\mathbf{j}}\right)\end{equation*}\]
+
+\[\begin{equation*}V(\mathbf{x})=\sum_{\text {atoms } j} f_{j} \delta\left(\mathbf{x}-\mathbf{x}_{\mathbf{j}}\right)\end{equation*}\]
+
+\[\begin{equation*}V(\mathbf{x}) \sim \sum_{\text {atoms } j} b_{j} \delta\left(\mathbf{x}-\mathbf{x}_{\mathbf{j}}\right)\end{equation*}\]
+
+\[\begin{equation*}S(\mathbf{G}) \sim \sum_{\text {atom } j \text { in unit cell }} b_{j} e^{i \mathbf{G} \cdot \mathbf{x}_{j}}\end{equation*}\]
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Simon S.H. The Oxford Solid State Basics (OUP, 2013)&lt;/li&gt;
+&lt;/ol&gt;</content><author><name>J. Diomedes</name><email>juandymorales432@gmail.com</email></author><category term="Estado_Solido" /><summary type="html"></summary></entry><entry><title type="html">Método de las ligaduras fuertes</title><link href="/estado_solido/2020/08/07/Metodo-Ligaduras-Fuertes.html" rel="alternate" type="text/html" title="Método de las ligaduras fuertes" /><published>2020-08-07T00:00:00+02:00</published><updated>2020-08-07T00:00:00+02:00</updated><id>/estado_solido/2020/08/07/Metodo%20Ligaduras%20Fuertes</id><content type="html" xml:base="/estado_solido/2020/08/07/Metodo-Ligaduras-Fuertes.html">&lt;p&gt;Para sistemas con electrones fuertemente ligados se usa el método &lt;em&gt;tight binding&lt;/em&gt;. Este método consiste en aproximar el potencial cerca de un punto de red por un potencial atómico, y tratar la interacción con los átomos en puntos de red vecinos o como una perturbación &lt;a href=&quot;#references&quot;&gt;[1, p. 136]&lt;/a&gt; de la interacción dominante entre las partículas (electrones y protones) en el átomo&lt;/p&gt;
+
+\[\begin{equation}
+\begin{aligned}
+H \psi(\mathbf{r})&amp;amp;=\left(H_{a t}+\Delta U(\mathbf{r})\right) \psi(\mathbf{r})\\
+&amp;amp;=\varepsilon(\mathbf{k}) \psi(\mathbf{r})
+\end{aligned}
+\end{equation}\]
+
+&lt;p&gt;El comportamiento de los &lt;em&gt;core electrons&lt;/em&gt; es similar tanto si tenemos un átomo libre como si tenemos un átomo formando un cristal &lt;a href=&quot;#references&quot;&gt;[2, pp. 167-168]&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Nosotros intentamos construir una solución que sea la superposición  de los orbitales atómicos de cada átomo del cristal &lt;a href=&quot;#references&quot;&gt;[1, p. 137]&lt;/a&gt;, &lt;a href=&quot;#references&quot;&gt;[3, p. 179]&lt;/a&gt;&lt;/p&gt;
+
+\[\begin{equation*}\psi_{n \mathbf{k}}(\mathbf{r})=\sum_{\mathbf{R}} C_{\mathbf{k}}(\mathbf{R}) \psi_{n}(\mathbf{r}-\mathbf{R})\end{equation*}\]
+
+&lt;p&gt;donde $\psi_{n}(\mathbf{r}-\mathbf{R})$ es la contribución de un orbital atómico situado en el punto $\mathbf{R}$ . Debemos tener en cuenta que los orbitales atómicos serían las soluciones a ecuaciones del tipo&lt;/p&gt;
+
+\[\begin{equation}
+H_{a t} \psi_{n}=E_{n} \psi_{n}
+\label{eq:OrbitalAtómico}
+\end{equation}\]
+
+&lt;p&gt;donde no se tiene en cuenta las interacciones de tipo electrón-electrón &lt;a href=&quot;#references&quot;&gt;[5, p. 31]&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;La suma en $\mathbf{R}$ se extiende a todo el cristal. Si queremos que $\psi_{n \mathbf{k}}(\mathbf{r})$ sea de la forma de Bloch se debe cumplir&lt;/p&gt;
+
+\[\begin{equation*}\psi_{n \mathbf{k}}(\mathbf{r})=\sum_{\mathbf{R}} e^{\mathbf{k} \cdot \mathbf{R}} \psi_{n}(\mathbf{r}-\mathbf{R})\end{equation*}\]
+
+&lt;p&gt;esto es $C_{\mathbf{k}}(\mathbf{R})=e^{\mathbf{k} \cdot \mathbf{R}}$.&lt;/p&gt;
+
+\[\begin{equation*}\psi(\mathbf{r})=\sum_{\mathbf{R}} e^{\boldsymbol{k} \cdot \mathbf{R}} \phi(\mathbf{r}-\mathbf{R})\end{equation*}\]
+
+&lt;p&gt;donde&lt;/p&gt;
+
+\[\begin{equation*}\phi(\mathbf{r})=\sum_{n} b_{n} \psi_{n}(\mathbf{r})\end{equation*}\]
+
+&lt;p&gt;esto es, el orbital molecular $\phi(\mathbf{r})$ se puede escribir como una superposición de los orbitales atómicos $\psi_{n}(\mathbf{r})$.&lt;/p&gt;
+
+&lt;p&gt;el lado izquierdo se convierte&lt;/p&gt;
+
+\[\begin{equation}\int d \mathbf{r} \phi_{m}^{*}(\mathbf{r})H \psi(\mathbf{r})=\varepsilon(\mathbf{k}) \int d \mathbf{r} \phi_{m}^{*}(\mathbf{r}) \psi(\mathbf{r})\end{equation}\]
+
+&lt;p&gt;mientras que el lado derecho se convierte en&lt;/p&gt;
+
+\[\begin{equation}
+\begin{aligned}
+\int d \mathbf{r} \phi_{m}^{*}(\mathbf{r})\left(H_{a t}+\Delta U(\mathbf{r})\right) \psi(\mathbf{r})&amp;amp;=\int d \mathbf{r} \phi_{m}^{*}(\mathbf{r}) H_{a t} \psi(\mathbf{r})+\int d \mathbf{r} \phi_{m}^{*}(\mathbf{r}) \Delta U(\mathbf{r}) \psi(\mathbf{r})\\
+&amp;amp;=\varepsilon_{m} \int d \mathbf{r} \phi_{m}^{*}(\mathbf{r}) \psi(\mathbf{r})+\int d \mathbf{r} \phi_{m}^{*}(\mathbf{r}) \Delta U(\mathbf{r}) \psi(\mathbf{r})\\
+\end{aligned}
+\end{equation}\]
+
+&lt;p&gt;igualando ambos lados se tiene que&lt;/p&gt;
+
+\[\begin{equation}\begin{aligned}
+\varepsilon(\mathbf{k}) \int d \mathbf{r} \phi_{m}^{*}(\mathbf{r}) \psi(\mathbf{r})&amp;amp;=\varepsilon_{m} \int d \mathbf{r} \phi_{m}^{*}(\mathbf{r}) \psi(\mathbf{r})+\int d \mathbf{r} \phi_{m}^{*}(\mathbf{r}) \Delta U(\mathbf{r}) \psi(\mathbf{r})
+\end{aligned}
+\end{equation}\]
+
+&lt;p&gt;o equivalentemente&lt;/p&gt;
+
+\[\begin{equation}\begin{aligned}
+\left(\varepsilon(\mathbf{k})-\varepsilon_{m}\right) \int d \mathbf{r} \phi_{m}^{*}(\mathbf{r}) \psi(\mathbf{r})&amp;amp;=\int d \mathbf{r} \phi_{m}^{*}(\mathbf{r}) \Delta U(\mathbf{r}) \psi(\mathbf{r})
+\end{aligned}
+\label{eq:CondicionTightBindingIntegral}
+\end{equation}\]
+
+&lt;p&gt;usemos el siguiente par de condiciones&lt;/p&gt;
+
+\[\begin{equation}
+\begin{aligned}
+\psi(\mathbf{r})&amp;amp;=\sum_{\mathbf{R}} e^{i \mathbf{k} \mathbf{R}} \phi(\mathbf{r}-\mathbf{R})\\
+\phi(\mathbf{r})&amp;amp;=\sum_{n} b_{n} \phi_{n}(\mathbf{r})
+\end{aligned}
+\label{eq:CondicionTightBinding}
+\end{equation}\]
+
+&lt;p&gt;para desarrollar las integrales a cada lado. Así la integral a la izquierda de Eq.($\ref{eq:CondicionTightBinding}$) será&lt;/p&gt;
+
+\[\begin{equation}
+\begin{aligned}
+\int d \mathbf{r} \phi_{m}^{*}(\mathbf{r}) \psi(\mathbf{r})&amp;amp;=\sum_{\mathbf{R}} e^{i \mathbf{k} \mathbf{R}}\int d \mathbf{r} \phi_{m}^{*}(\mathbf{r}) \phi(\mathbf{r}-\mathbf{R})\\
+&amp;amp;=\sum_{\mathbf{R}} e^{i \mathbf{k} \mathbf{R}}\sum_{n} b_{n}\int d \mathbf{r} \phi_{m}^{*}(\mathbf{r}) \phi_{n}(\mathbf{r}-\mathbf{R})\\
+&amp;amp;=b_{m}+\sum_{\bar{R} \neq 0} e^{i \mathbf{k} R} \sum_{n} b_{n} \int d \mathbf{r} \phi_{m}^{*}(\mathbf{r}) \phi_{n}(\mathbf{r}-\mathbf{R})
+\end{aligned}
+\end{equation}\]
+
+&lt;p&gt;mientras que la integral a la derecha de Eq.($\ref{eq:CondicionTightBinding}$) será&lt;/p&gt;
+
+\[\begin{equation}
+\begin{aligned}
+\int d \mathbf{r} \phi_{m}^{*}(\mathbf{r}) \Delta U(\mathbf{r}) \psi(\mathbf{r}) &amp;amp;=\sum_{R} e^{i \mathbf{k} \mathbf{R}} \sum_{n} b_{n} \int d \mathbf{r} \phi_{m}^{*}(\mathbf{r}) \Delta U(\mathbf{r}) \phi_{n}(\mathbf{r}-\mathbf{R})\\
+&amp;amp;=\sum_{n} b_{n} \int d \mathbf{r} \phi_{m}^{*}(\mathbf{r}) \Delta U(\mathbf{r}) \phi_{n}(\mathbf{r})+\\
+&amp;amp;+\sum_{\mathbf{R} \neq 0} e^{i \mathbf{k} \mathbf{R}} \sum_{n} b_{n} \int d \mathbf{r} \phi_{m}^{*}(\mathbf{r}) \Delta U(\mathbf{r}) \phi_{n}(\mathbf{r}-\mathbf{R})
+\end{aligned}
+\end{equation}\]
+
+&lt;p&gt;de este modo, volviendo a la ecuación de partida Eq.($\ref{eq:CondicionTightBindingIntegral}$) se tiene que&lt;/p&gt;
+
+\[\begin{equation}
+\begin{aligned}
+\left(\varepsilon(\mathbf{k})-\varepsilon_{m}\right) \left(b_{m}+\sum_{\bar{R} \neq 0} e^{i \mathbf{k} R} \sum_{n} b_{n} \int d \mathbf{r} \phi_{m}^{*}(\mathbf{r}) \phi_{n}(\mathbf{r}-\mathbf{R})\right)=\\
+=\sum_{n} b_{n} \int d \mathbf{r} \phi_{m}^{*}(\mathbf{r}) \Delta U(\mathbf{r}) \phi_{n}(\mathbf{r})+\sum_{\mathbf{R} \neq 0} e^{i \mathbf{k} \mathbf{R}} \sum_{n} b_{n} \int d \mathbf{r} \phi_{m}^{*}(\mathbf{r}) \Delta U(\mathbf{r}) \phi_{n}(\mathbf{r}-\mathbf{R})
+\end{aligned}
+\end{equation}\]
+
+&lt;p&gt;esto es&lt;/p&gt;
+
+\[\begin{equation}
+\begin{aligned}
+\left(\varepsilon(\mathbf{k})-\varepsilon_{m}\right) b_{m}=-&amp;amp;\left(\varepsilon(\mathbf{k})-\varepsilon_{m}\right)\sum_{\bar{R} \neq 0} e^{i \mathbf{k} R} \sum_{n} b_{n} \int d \mathbf{r} \phi_{m}^{*}(\mathbf{r}) \phi_{n}(\mathbf{r}-\mathbf{R})\\
++&amp;amp;\sum_{n} b_{n} \int d \mathbf{r} \phi_{m}^{*}(\mathbf{r}) \Delta U(\mathbf{r}) \phi_{n}(\mathbf{r})\\
++&amp;amp;\sum_{\mathbf{R} \neq 0} e^{i \mathbf{k} \mathbf{R}} \sum_{n} b_{n} \int d \mathbf{r} \phi_{m}^{*}(\mathbf{r}) \Delta U(\mathbf{r}) \phi_{n}(\mathbf{r}-\mathbf{R})
+\end{aligned}
+\end{equation}\]
+
+&lt;p&gt;si suponemos onda s, esto es $b_k=\delta_{ks}$ obtenemos&lt;/p&gt;
+
+\[\begin{equation}\begin{aligned}
+\left(\varepsilon(\mathbf{k})-\varepsilon_{s}\right) b_{s}=-&amp;amp;\left(\varepsilon(\mathbf{k})-\varepsilon_{s}\right) \sum_{\mathbf{R} \neq 0} e^{i \mathbf{k} R} b_s \int d \mathbf{r} \phi_{s}^{*}(\mathbf{r}) \phi_{s}(\mathbf{r}-\mathbf{R})\\
++&amp;amp; b_{s} \int d \mathbf{r} \phi_{s}^{*}(\mathbf{r}) \Delta U(\mathbf{r}) \phi_{s}(\mathbf{r})\\
++&amp;amp; \sum e^{i \mathbf{k} R} b_{s} \int d \mathbf{r} \phi_{s}^{*}(\mathbf{r}) \Delta U(\mathbf{r}) \phi_{s}(\mathbf{r}-\mathbf{R})
+\end{aligned}
+\end{equation}\]
+
+&lt;p&gt;si con objeto de simplificar los cálculos hacemos&lt;/p&gt;
+
+\[\begin{equation}\begin{aligned}
+\alpha(\mathbf{R})&amp;amp;=+\int d \mathbf{r} \phi^{*}_s(\mathbf{r}) \phi_s(\mathbf{r}-\mathbf{R}) \\
+\beta\quad &amp;amp;=-\int d \mathbf{r}|\phi_s(\mathbf{r})|^{2} \Delta U(\mathbf{r}) \\
+\gamma(\mathbf{R})&amp;amp;=-\int d \mathbf{r} \phi^{*}_s(\mathbf{r}) \Delta U(\mathbf{r}) \phi_s(\mathbf{r}-\mathbf{R})
+\end{aligned}\end{equation}\]
+
+&lt;p&gt;obtenemos&lt;/p&gt;
+
+\[\begin{equation}\begin{aligned}
+\left(\varepsilon(\mathbf{k})-\varepsilon_{s}\right) b_{s}=-&amp;amp;\left(\varepsilon(\mathbf{k})-\varepsilon_{s}\right) \sum_{\mathbf{R} \neq 0} e^{i \mathbf{k} \cdot\mathbf{R}} b_s \alpha(\mathbf{R})\\
+-&amp;amp; b_{s} \beta\\
+-&amp;amp; \sum e^{i \mathbf{k}\cdot\mathbf{R}} b_{s} \gamma(\mathbf{R})
+\end{aligned}
+\end{equation}\]
+
+&lt;p&gt;esto es,&lt;/p&gt;
+
+\[\begin{equation}\left(\varepsilon(\mathbf{k})-\varepsilon_{s}\right)\left[1+\sum_{\bar{R} \neq 0} \alpha(\mathbf{R}) e^{i \mathbf{k} \mathbf{R}}\right]=-\beta-\sum_{\bar{R} \neq 0} \gamma(\mathbf{R}) e^{i \mathbf{k} \mathbf{R}}\end{equation}\]
+
+&lt;p&gt;de modo que la energía se puede escribir como&lt;/p&gt;
+
+\[\begin{equation}\Rightarrow \varepsilon(\mathbf{k})=\varepsilon_{s}-\frac{\beta+\sum_{\mathbf{R}\neq 0} \gamma(\mathbf{R}) e^{i \mathbf{k}\cdot\mathbf{R}}}{1+\sum_{\mathbf{R} \neq 0} \alpha(\mathbf{R}) e^{i \mathbf{k} \cdot\mathbf{R}}}\end{equation}\]
+
+&lt;p&gt;si suponemos que $\alpha (\mathbf{R})\simeq 0$&lt;/p&gt;
+
+\[\begin{equation}
+\Rightarrow \varepsilon(\mathbf{k})=\varepsilon_{s}-\beta-\sum_{\mathbf{R}\neq 0} \gamma(\mathbf{R}) e^{i \mathbf{k}\cdot\mathbf{R}}
+\end{equation}\]
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Maza, Jesús, Jesús Mosqueira, and José Antonio Veira. Física del estado sólido: ejercicios resueltos. Vol. 11. Univ Santiago de Compostela, 2013&lt;/li&gt;
+  &lt;li&gt;Ibach H., Lueth H. Solid-State Physics.. An Introduction to Principles of Materials Science 4ed., Springer, 2009&lt;/li&gt;
+  &lt;li&gt;Patterson J.D., Bailey B.C. Solid-state physics.. Introduction to the theory (2ed., Springer, 2011)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://physics.stackexchange.com/q/320578/248507&quot;&gt;LCAO - Constructing a molecular wavefunction&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Mohn P. Magnetism in the solid state (2ed., Springer, 2006)&lt;/li&gt;
+&lt;/ol&gt;</content><author><name>J. Diomedes</name><email>juandymorales432@gmail.com</email></author><category term="Estado_Solido" /><summary type="html">Para sistemas con electrones fuertemente ligados se usa el método tight binding. Este método consiste en aproximar el potencial cerca de un punto de red por un potencial atómico, y tratar la interacción con los átomos en puntos de red vecinos o como una perturbación [1, p. 136] de la interacción dominante entre las partículas (electrones y protones) en el átomo</summary></entry><entry><title type="html">Niveles de Landau</title><link href="/estado_solido/2020/08/07/Niveles-de-Landau.html" rel="alternate" type="text/html" title="Niveles de Landau" /><published>2020-08-07T00:00:00+02:00</published><updated>2020-08-07T00:00:00+02:00</updated><id>/estado_solido/2020/08/07/Niveles%20de%20Landau</id><content type="html" xml:base="/estado_solido/2020/08/07/Niveles-de-Landau.html">&lt;h2 id=&quot;gas-de-electrones-en-dos-dimensiones&quot;&gt;Gas de electrones en dos dimensiones&lt;/h2&gt;
+
+\[\begin{equation*}H=\frac{\pi^{2}}{2 m}=\frac{(\vec{p}-q \vec{A})^{2}}{2 m}\end{equation*}\]
+
+&lt;p&gt;dado que $\vec{B}=\vec{\nabla} \times \vec{A}$ si tomamos $\vec{A}=B_{o} x \hat{y}$ para que $\vec{B}=B_{o} \hat{z}$ podemos reescribir el hamiltoniano como&lt;/p&gt;
+
+\[\begin{equation*}H=\frac{p^{2}}{2 m}-\frac{q B_{o} p_{y}}{m} x+\frac{q^{2} B_{o}^{2}}{2 m} x^{2}\end{equation*}\]
+
+&lt;p&gt;la componente $y$ conmuta con el hamiltoniano&lt;a href=&quot;#references&quot;&gt;[]&lt;/a&gt; &lt;strong&gt;¿?REFERENCIA A ALGÚN LIBRO DE CUANTICA DONDE SE VEA EXPLICITAMENTE LO QUE SUCEDE AL CONMUTAR …&lt;/strong&gt; por tanto&lt;/p&gt;
+
+\[\begin{equation*}\left[H, p_{y}\right]=0 \Rightarrow \psi(x, y)=e^{i k_{y} y} u(x)\end{equation*}\]
+
+&lt;p&gt;de modo que operando &lt;a href=&quot;#references&quot;&gt;[1]&lt;/a&gt;&lt;/p&gt;
+
+\[\begin{equation*}\begin{array}{r}
+H \psi_{p_{y}}=E\left(p_{y}\right) \psi_{p_{y}} \Rightarrow \\
+\left(\frac{p_{x}^{2}}{2 m}+\frac{p_{y}^{2}}{2 m}-\frac{q B_{o} p_{y}}{m} x+\frac{q^{2} B_{o}^{2}}{2 m} x^{2}\right) \phi_{p_{y}}=E\left(p_{y}\right) \phi_{p_{y}} \Rightarrow \\
+\left(\frac{p_{x}^{2}}{2 m}+\frac{\left(q B_{o}\right)^{2}}{2 m}\left(\frac{\hbar^{2} k_{y}^{2}}{\left(q B_{o}\right)^{2}}-2 \frac{\hbar k_{y}}{q B_{o}} x+x^{2}\right)\right) \phi_{p_{y}}=E\left(p_{y}\right) \phi_{p_{y}}
+\end{array}\end{equation*}\]
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;de modo que definiendo $\ell_{B}^{2} \equiv \frac{\hbar}{q B}$, $\omega_{c} \equiv \frac{\left&lt;/td&gt;
+      &lt;td&gt;q B_{o}\right&lt;/td&gt;
+      &lt;td&gt;}{m}$  y completando cuadrado&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+\[\begin{equation*}\frac{1}{2 m}\left(p_{x}^{2}+m^{2} \omega_{c}^{2}\left(x-k_{y} \ell_{B}^{2}\right)^{2}\right) \phi_{p_{y}}=E\left(p_{y}\right) \phi_{p_{y}}\end{equation*}\]
+
+&lt;p&gt;de modo que tenemos un oscilador armónico unidimensional con niveles&lt;/p&gt;
+
+\[\begin{equation*}E_{n}=\hbar \omega_{c}\left(n+\frac{1}{2}\right)\end{equation*}\]
+
+&lt;p&gt;y con autoestados&lt;/p&gt;
+
+\[\begin{equation*}\psi_{n, p_{y}}=e^{i k_{y} y} H_{n}\left(x-k_{y} \ell_{B}^{2}\right) e^{-\frac{\left(x-k_{y} \ell_{B}^{2}\right)^{2}}{4 \ell_{B}^{2}}}\end{equation*}\]
+
+&lt;p&gt;donde los $H_n$ son polinomios de hermite. Los niveles de energía de este oscilador en particular son llamadas &lt;em&gt;Landau levels&lt;/em&gt;. Hay muchos estados cuánticos para cada  &lt;em&gt;Landau level&lt;/em&gt;, esto es, dado $n$, cada $p_y$ se corresponde a un autoestado con la misma energía.&lt;/p&gt;
+
+&lt;p&gt;El efecto de aplicar campo magnético se puede ver a continuación&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../assets/RazeghiFig3.15.png&quot; alt=&quot;image-20200907130436320&quot; style=&quot;zoom: 67%;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;La densidad de estados, constante en el caso $B=0$ se convierte en discreta al aplicar $B&amp;gt;0$.&lt;/p&gt;
+
+&lt;h2 id=&quot;degeneración-de-los-niveles-de-landau&quot;&gt;Degeneración de los niveles de Landau&lt;/h2&gt;
+
+&lt;p&gt;Tenemos condiciones de contorno periódicas luego $\Psi(x+L, y+L)=\Psi(x, y)$ &lt;a href=&quot;#references&quot;&gt;[2, p. 138]&lt;/a&gt;&lt;/p&gt;
+
+\[\begin{equation*}k_{y}=\frac{2 \pi n_{y}}{L_y}, n_{y}=0,\pm 1,\pm 2,\end{equation*}\]
+
+&lt;p&gt;pero también se cumple que&lt;/p&gt;
+
+\[\begin{equation*}k_{y}=\frac{|q| B_0 x_{0}}{\hbar}\end{equation*}\]
+
+&lt;p&gt;de modo que igualando&lt;/p&gt;
+
+\[\begin{equation*}x_{0}=\frac{2 \pi \hbar n_y}{|q| B_0 L_{y}} \quad \text { si } \quad 0 \leq x_{0} \leq L_{x}\end{equation*}\]
+
+&lt;p&gt;o equivalentemente&lt;/p&gt;
+
+\[\begin{equation*}0 \leq x_{0} \leq L_{x} \Rightarrow 0 \leq \frac{2 \pi \hbar m}{|q| B_0 L_{y}} \leq L_{x}\end{equation*}\]
+
+&lt;p&gt;de este modo el número de electrones que puede ocupar un nivel de Landau es&lt;/p&gt;
+
+&lt;p&gt;\(\begin{equation*}0\leq n_y \leq \frac{|q| B_0 L_{x} L_{y}}{2 \pi \hbar}\end{equation*}\)
+de modo que el número máximo de electrones que puede ocupar un nivel de Landau sería&lt;/p&gt;
+
+\[\begin{equation*}n_{y,\max }=\frac{|q| B_0 L_{x} L_{y}}{2 \pi \hbar}=N_{L}\end{equation*}\]
+
+&lt;p&gt;se suele usar la definición de longitud característica $l_B$ para simplificar&lt;/p&gt;
+
+\[\begin{equation*}l_{B}=\sqrt{\frac{\hbar}{|q| B_0}} \Rightarrow N_{L}=\frac{L_{x} L_{y}}{2 \pi l_{B}^{2}}\end{equation*}\]
+
+&lt;p&gt;aunque también podemos interpretarlo desde el punto de vista de flujo magnético&lt;/p&gt;
+
+\[\begin{equation*}N_{L}=\frac{|q| B_0 L_{x} L_{y}}{2 \pi \hbar}=\frac{B_0 S}{\frac{h}{|q|}}=\frac{\Phi}{\Phi_{0}}\end{equation*}\]
+
+&lt;p&gt;El número de estados cuánticos entre dos niveles de Landau consecutivos sería&lt;/p&gt;
+
+\[\begin{equation*}\pi\left(k_{n+1}^{2}-k_{n}^{2}\right) \frac{L_{x} L_{y}}{(2 \pi)^{2}}=\pi \frac{2 m}{\hbar^{2}} \hbar \omega_{C} \frac{L_{x} L_{y}}{(2 \pi)^{2}}=\frac{|q| B_0 L_{x} L_{y}}{2 \pi \hbar}=N_{L}\end{equation*}\]
+
+&lt;h2 id=&quot;gas-de-electrones-en-tres-dimensiones&quot;&gt;Gas de electrones en tres dimensiones&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;#references&quot;&gt;[2, p. 137]&lt;/a&gt;&lt;/p&gt;
+
+\[\begin{equation*}E_{n}\left(k_{z}\right)=\left(n+\frac{1}{2}\right) \hbar \omega_{C}+\frac{\hbar^{2} k_{z}^{2}}{2 m}\end{equation*}\]
+
+&lt;p&gt;**¿?FALTARÍA COMPETAR CON Onsager-Lifshitz **&lt;/p&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;http://publish.illinois.edu/yubo-paul-yang/files/2014/09/Landau-Levels.pdf&quot;&gt;Yubo Yaul Yang. Landau Levels. 2014&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Razeghi M. Fundamentals of Solid State Engineering (3ed., Springer, 2009)&lt;/li&gt;
+&lt;/ol&gt;</content><author><name>J. Diomedes</name><email>juandymorales432@gmail.com</email></author><category term="Estado_Solido" /><summary type="html">Gas de electrones en dos dimensiones</summary></entry><entry><title type="html">Red del grafeno</title><link href="/estado_solido/2020/08/07/Red-Del-Grafeno.html" rel="alternate" type="text/html" title="Red del grafeno" /><published>2020-08-07T00:00:00+02:00</published><updated>2020-08-07T00:00:00+02:00</updated><id>/estado_solido/2020/08/07/Red%20Del%20Grafeno</id><content type="html" xml:base="/estado_solido/2020/08/07/Red-Del-Grafeno.html">&lt;p&gt;La red del grafeno puede ser vista como una hexagonal con base de dos átomos y de parámetro de red $a=\sqrt{3}l$. La base de dicha red sería&lt;/p&gt;
+
+\[\begin{equation}
+\begin{aligned}
+\mathbf{a}_{1}&amp;amp;=a\left(\frac{\sqrt{3}}{2},-\frac{1}{2}\right)\\
+\mathbf{a}_{2}&amp;amp;=a\left(0,1\right)
+\end{aligned}
+\end{equation}\]
+
+&lt;p&gt;en el espacio recíproco la red base sería&lt;/p&gt;
+
+\[\begin{equation}
+\begin{aligned}
+\mathbf{b}_{1}&amp;amp;=2 \pi \frac{\hat{z} \times \mathbf{a}_{2}}{\left|\mathbf{a}_{1} \times \mathbf{a}_{2}\right|}=\frac{4 \pi}{\sqrt{3}a} (1,0)\\
+\mathbf{b}_{2}&amp;amp;=2 \pi \frac{\hat{z} \times \mathbf{a}_{1}}{\left|\mathbf{a}_{1} \times \mathbf{a}_{2}\right|}=\frac{4 \pi}{\sqrt{3}a}\left(\frac{1}{2},\frac{\sqrt{3}}{2}\right)
+\end{aligned}
+\label{eq:grafenoReciprocaBase}
+\end{equation}\]
+
+&lt;p&gt;cualquier vector de la red se debe poder escribir tomando una
+combinación lineal de coeficientes enteros de la base
+Eq.(\ref{eq:grafenoReciprocaBase})&lt;/p&gt;
+
+\[\begin{equation}
+\begin{aligned}
+\mathbf{G}=h\mathbf{b}_1+k\mathbf{b}_2
+\end{aligned}
+\end{equation}\]
+
+&lt;p&gt;Se sabe que la ley de Bragg es de la forma a&lt;/p&gt;
+
+\[\begin{equation}
+\begin{aligned}
+\mathbf{G}^2=&amp;amp;2\,\mathbf{k}\cdot\mathbf{G}\\
+=&amp;amp;2kG\sin\theta
+\end{aligned}
+\end{equation}\]
+
+&lt;p&gt;de este modo&lt;/p&gt;
+
+\[\begin{equation}
+\begin{aligned}
+\mathbf{G}^2&amp;amp;=h^2\mathbf{b}_1^2+k^2\mathbf{b}_2^2+2kh\,\mathbf{b}_1\cdot\mathbf{b}_2\\
+&amp;amp;=\left(\frac{4 \pi}{\sqrt{3}a}\right)^2(h^2+k^2+hk)
+\end{aligned}
+\end{equation}\]
+
+&lt;p&gt;igualando a ambos lados se obtiene&lt;/p&gt;
+
+\[\begin{equation}
+\begin{aligned}
+2k\sin\theta=\frac{4 \pi}{\sqrt{3}a}\sqrt{h^2+k^2+hk}
+\end{aligned}
+\end{equation}\]
+
+&lt;p&gt;de modo que simplificando y teniendo en cuenta que $k=2\pi /\lambda$&lt;/p&gt;
+
+\[\begin{equation}
+\begin{aligned}
+\sin\theta=\frac{\lambda}{\sqrt{3}a}\sqrt{h^2+k^2+hk}
+\end{aligned}
+\label{eq:braggGrafeno}
+\end{equation}\]
+
+&lt;p&gt;el factor de estructura&lt;/p&gt;
+
+\[\begin{equation}\mathbf{r}_{B}=\frac{2}{3} \mathbf{a}_{1}+\frac{1}{3} \mathbf{a}_{2}\end{equation}\]
+
+\[\begin{equation}S(\mathbf{G})=\frac{1}{2}\left[1+\exp \left(i\left(2h+k\right) \frac{2 \pi}{3}\right)\right]\end{equation}\]
+
+&lt;p&gt;las extinciones se producen para los pares $(h,k)$ que cumplen&lt;/p&gt;
+
+\[\begin{equation}
+\left(2h+k\right) \frac{2 \pi}{3}=(2n+1)\pi
+\end{equation}\]
+
+&lt;p&gt;si por ejemplo tomamos $\lambda = 3l/2$ y $n=1$  en eq.(\ref{eq:braggGrafeno}) tenemos que la ley
+de Bragg se transforma en&lt;/p&gt;
+
+\[\begin{equation}
+\sin \theta=\frac{\sqrt{h^{2}+k^{2}+h k}}{2} 
+\label{eq:braggfinalgrafeno}
+\end{equation}\]
+
+&lt;p&gt;si resolvemos para&lt;/p&gt;
+
+\[\begin{equation}
+h^2+k^2+hk=4
+\end{equation}\]
+
+&lt;p&gt;obtenemos&lt;/p&gt;
+
+\[\begin{equation}
+\begin{array}{ll}
+h=\pm 2, &amp;amp; k=0 \\
+h=0, &amp;amp; k=\pm 2 \\
+h=-2, &amp;amp; k=2 \\
+h=2, &amp;amp; k=-2
+\label{eq:grafenohk4}
+\end{array}
+\end{equation}\]
+
+&lt;p&gt;Para&lt;/p&gt;
+
+\[\begin{equation}
+h^2+k^2+hk=3
+\end{equation}\]
+
+&lt;p&gt;obtenemos&lt;/p&gt;
+
+\[\begin{equation}\begin{array}{ll}
+h=-2, &amp;amp; k=1 \\
+h=-1,  &amp;amp;k=-1 \\
+h=-1,  &amp;amp;k=2 \\
+h=1, &amp;amp;k=-2 \\
+h=1,  &amp;amp;k=1
+\end{array}
+\label{eq:grafenohk3}
+\end{equation}\]
+
+&lt;p&gt;de modo que obtenemos 5 máximos.&lt;/p&gt;
+
+&lt;p&gt;Para&lt;/p&gt;
+
+\[\begin{equation}
+h^2+k^2+hk=1
+\end{equation}\]
+
+&lt;p&gt;obtenemos&lt;/p&gt;
+
+\[\begin{equation}\begin{array}{ll}
+h=\pm 1, &amp;amp; k=0 \\
+h=0, &amp;amp; k=\pm 1 \\
+h=-1, &amp;amp; k=1 \\
+h=1, &amp;amp; k=-1
+\end{array}
+\label{eq:grafenohk1}
+\end{equation}\]
+
+&lt;p&gt;Para&lt;/p&gt;
+
+\[\begin{equation}
+h^2+k^2+hk=0
+\end{equation}\]
+
+&lt;p&gt;obtenemos&lt;/p&gt;
+
+\[\begin{equation}\begin{array}{ll}
+h= 0, &amp;amp; k=0 \\
+\end{array}
+\label{eq:grafenohk0}
+\end{equation}\]
+
+&lt;p&gt;dado que $(h,k)=(0,0)$ no indica ninguna dirección en el espacio recíproco, debemos obviar los resultados obtenidos a partir de Eq.(\ref{eq:grafenohk0}).&lt;/p&gt;
+
+&lt;p&gt;Esto nos deja los siguientes resultados, a partir de Eq.(\ref{eq:grafenohk4}, \ref{eq:grafenohk3}, \ref{eq:grafenohk1})&lt;/p&gt;
+
+\[\begin{equation}
+\begin{aligned}
+h^2+k^2+hk=4\rightarrow\sin\theta = 1\rightarrow \theta = \pm 90^\circ\quad\rightarrow\quad &amp;amp;\alpha = 180^\circ\\
+h^2+k^2+hk=3\rightarrow\sin\theta = \sqrt{3}/2\rightarrow \theta = \pm 60^\circ\quad\rightarrow\quad &amp;amp;\alpha = 120^\circ , 240^\circ\\
+h^2+k^2+hk=1\rightarrow\sin\theta = 1/2\rightarrow \theta = \pm 30^\circ\quad\rightarrow\quad &amp;amp;\alpha =60^\circ ,300^\circ
+\end{aligned}
+\end{equation}\]
+
+&lt;p&gt;$\theta$ es el ángulo entre el haz incidente y el plano que provoca la difracción, de este modo, el ángulo entre el haz incidente y el haz difractado es $2\theta$. $\alpha$ es el ángulo entre $\mathbf{k}$ y $\mathbf{G}$. La relación entre $\theta$ y $\alpha$ es&lt;/p&gt;
+
+\[\begin{equation}
+\theta +\alpha = \frac{\pi}{2}
+\end{equation}\]
+
+&lt;p&gt;y se usa en la relación de Bragg para obtener&lt;/p&gt;
+
+\[\begin{equation}
+\begin{aligned}
+\mathbf{G}^2 &amp;amp;=2kG\sin\theta\\
+ &amp;amp;= 2kG\sin\left(\frac{\pi}{2}-\alpha\right)\\
+ &amp;amp;= 2kG\cos\alpha \\
+   &amp;amp;= 2\mathbf{k}\cdot\mathbf{G} 
+\end{aligned}
+\label{eq:BraggVectorial}
+\end{equation}\]
+
+&lt;p&gt;debemos tener en cuenta que la condición de máximo es&lt;/p&gt;
+
+\[\begin{equation}
+\Delta \mathbf{k}=\mathbf{G}
+\end{equation}\]
+
+&lt;p&gt;de modo que para scattering elástico, es decir, para $k’=k$, podemos obtener Eq.(\ref{eq:BraggVectorial}).&lt;/p&gt;
+
+&lt;p&gt;No todos los conjuntos de valores en Eq.(\ref{eq:grafenohk4}, \ref{eq:grafenohk3}, \ref{eq:grafenohk1}) son soluciones válidas para un scattering elástico. Los valores correctos se pueden ver fácilmente tras hacer la representación de Ewald. Dado que tenemos scattering elástico, no todas las soluciones matemáticas de los pares $(h,k)$ corresponden a una solución de la física del problema. El factor de estructura no descarta los pares $(h,k)$ calculados, sin embargo, aquellos que pares que cumplan&lt;/p&gt;
+
+\[\begin{equation}
+|\mathbf{k}'| &amp;gt; |\mathbf{k}+\mathbf{G}|
+\end{equation}\]</content><author><name>J. Diomedes</name><email>juandymorales432@gmail.com</email></author><category term="Estado_Solido" /><summary type="html">La red del grafeno puede ser vista como una hexagonal con base de dos átomos y de parámetro de red $a=\sqrt{3}l$. La base de dicha red sería</summary></entry><entry><title type="html">Teorema de Bloch</title><link href="/estado_solido/2020/08/07/Teorema-de-Bloch.html" rel="alternate" type="text/html" title="Teorema de Bloch" /><published>2020-08-07T00:00:00+02:00</published><updated>2020-08-07T00:00:00+02:00</updated><id>/estado_solido/2020/08/07/Teorema%20de%20Bloch</id><content type="html" xml:base="/estado_solido/2020/08/07/Teorema-de-Bloch.html">&lt;p&gt;&lt;strong&gt;Theorem&lt;/strong&gt;. Los autoestados $\psi$ del hamiltoniano de un electrón $H=-\hbar^{2} \nabla^{2} / 2 m+$ $U(\mathbf{r}),$ donde $U(\mathbf{r}+\mathbf{R})=U(\mathbf{r})$ para todo  en una red de Bravais se puede escoger de modo que sea equivalente a&lt;/p&gt;
+
+\[\begin{equation*}\psi_{n \mathbf{k}}(\mathbf{r})=e^{\mathbf{i k} \cdot \mathbf{r}} u_{n \mathbf{k}}(\mathbf{r})\end{equation*}\]
+
+&lt;p&gt;donde&lt;/p&gt;
+
+\[\begin{equation*}u_{n k}(\mathbf{r}+\mathbf{R})=u_{n \mathbf{k}}(\mathbf{r})\end{equation*}\]
+
+&lt;p&gt;para todo $\mathbf{R}$ en la  red de Bravais. Una consecuencia inmediata sería&lt;/p&gt;
+
+\[\begin{equation*}\psi_{n \mathrm{k}}(\mathbf{r}+\mathbf{R})=e^{i \mathbf{k} \cdot \mathbf{R}} \psi_{n \mathbf{k}}(\mathbf{r})\end{equation*}\]
+
+\[\begin{equation*}T_{\mathrm{R}} f(\mathbf{r})=f(\mathbf{r}+\mathbf{R})\end{equation*}\]
+
+&lt;p&gt;dado que el hamiltoniano es periódico&lt;/p&gt;
+
+\[\begin{equation*}T_{\mathrm{R}} H \psi=H(\mathbf{r}+\mathbf{R}) \psi(\mathbf{r}+\mathbf{R})=H(\mathbf{r}) \psi(\mathbf{r}+\mathbf{R})=H T_{\mathrm{R}} \psi\end{equation*}\]
+
+&lt;p&gt;de modo que&lt;/p&gt;
+
+\[\begin{equation*}T_{\mathrm{R}} H=H T_{\mathrm{R}}\end{equation*}\]
+
+&lt;p&gt;el hamiltoniano y el operador traslación conmutan. Podemos elegir una base de autoestados comunes a ambos operadores&lt;/p&gt;
+
+\[\begin{equation*}\begin{array}{l}
+H \psi=\varepsilon \psi \\
+T_{\mathrm{R}} \psi=c(\mathbf{R})\psi
+\end{array}\end{equation*}\]
+
+\[\begin{equation*}T_{\mathrm{R}} T_{\mathrm{R}} \psi(\mathbf{r})=T_{\mathrm{R}} \cdot T_{\mathrm{R}} \psi(\mathbf{r})=\psi\left(\mathbf{r}+\mathbf{R}+\mathbf{R}^{\prime}\right)\end{equation*}\]
+
+&lt;p&gt;por lo tanto&lt;/p&gt;
+
+\[\begin{equation*}T_{\mathbf{R}} T_{\mathbf{R}^{\prime}}=T_{\mathbf{R}^{\prime}} T_{\mathbf{R}}=T_{\mathbf{R}+\mathbf{R}^{\prime}}\end{equation*}\]
+
+\[\begin{equation*}T_{\mathrm{R}} T_{\mathrm{R}} \psi=c(\mathbf{R}) T_{\mathrm{R}} \psi=c(\mathbf{R}) c\left(\mathbf{R}^{\prime}\right) \psi\end{equation*}\]
+
+\[\begin{equation*}T_{\mathbf{R}^\prime} T_{\mathbf{R}} \psi=T_{\mathbf{R}+\mathbf{R}^\prime} \psi=c\left(\mathbf{R}+\mathbf{R}^{\prime}\right) \psi\end{equation*}\]
+
+\[\begin{equation*}c\left(\mathbf{R}+\mathbf{R}^{\prime}\right)=c(\mathbf{R}) c\left(\mathbf{R}^{\prime}\right)\end{equation*}\]
+
+\[\begin{equation*}c\left(\mathbf{a}_{i}\right)=e^{2 \pi i x_{i}}\end{equation*}\]
+
+\[\begin{equation*}\mathbf{R}=n_{1} \mathbf{a}_{1}+n_{2} \mathbf{a}_{2}+n_{3} \mathbf{a}_{3}\end{equation*}\]
+
+\[\begin{equation*}c(\mathbf{R})=c\left(\mathbf{a}_{1}\right)^{n_{1}} c\left(\mathbf{a}_{2}\right)^{n_2}  c\left(\mathbf{a}_{3}\right)^{n_{3}}\end{equation*}\]
+
+\[\begin{equation*}c(\mathbf{R})=e^{i \mathbf{k} \cdot \mathbf{R}}\end{equation*}\]
+
+&lt;p&gt;donde&lt;/p&gt;
+
+\[\begin{equation*}\mathbf{k}=x_{1} \mathbf{b}_{1}+x_{2} \mathbf{b}_{2}+x_{3} \mathbf{b}_{3}\end{equation*}\]
+
+&lt;p&gt;dado que $\mathbf{b}&lt;em&gt;{i} \cdot \mathbf{a}&lt;/em&gt;{j}=2 \pi \delta_{i j}$. Si tomamos un autoestado del hamiltoniano $\psi$ se debe cumplir &lt;a href=&quot;#references&quot;&gt;[1, p. 135]&lt;/a&gt;&lt;/p&gt;
+
+\[\begin{equation*}T_{\mathrm{R}} \psi=\psi(\mathbf{r}+\mathbf{R})=c(\mathbf{R}) \psi=e^{\mathbf{i} \mathbf{k} \cdot \mathbf{R}} \psi(\mathbf{r})\end{equation*}\]
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Ashcroft, Neil W., and N. David Mermin. “Solid state physics [by] Neil W. Ashcroft [and] N. David Mermin.” (1976)&lt;/li&gt;
+&lt;/ol&gt;</content><author><name>J. Diomedes</name><email>juandymorales432@gmail.com</email></author><category term="Estado_Solido" /><summary type="html">Theorem. Los autoestados $\psi$ del hamiltoniano de un electrón $H=-\hbar^{2} \nabla^{2} / 2 m+$ $U(\mathbf{r}),$ donde $U(\mathbf{r}+\mathbf{R})=U(\mathbf{r})$ para todo en una red de Bravais se puede escoger de modo que sea equivalente a</summary></entry></feed>
